@@ -1,0 +1,114 @@
+#press-mentions {
+  margin-top: 35px;
+  text-align: center;
+}
+
+#press-mentions a.logo {
+  border: 0;
+  display: inline-block;
+  margin: 0 16px 32px;
+  opacity: 0.5;
+  text-indent: -9999px;
+  max-width: 200px;
+  vertical-align: middle;
+}
+
+#press-mentions a.logo.tecnologia-facil {
+  background: url(../images/logos/tecnologia-facil.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.vazante-net {
+  background: url(../images/logos/vazante-net.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.giga {
+  background: url(../images/logos/33-giga.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 70px;
+}
+
+#press-mentions a.logo.games-apps-reviews {
+  background: url(../images/logos/games-apps-reviews.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.feedmyapp {
+  background: url(../images/logos/feed-my-app.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.inforchannel {
+  background: url(../images/logos/inforchannel.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+}
+
+#press-mentions a.logo.maringa-post {
+  background: url(../images/logos/maringa-post.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.zoom-zine {
+  background: url(../images/logos/zoom-zine.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.blog-moreira {
+  background: url(../images/logos/blog-moreira.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.parana-shop {
+  background: url(../images/logos/parana-shop.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
