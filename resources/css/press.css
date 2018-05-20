@@ -112,3 +112,33 @@
   width: 60px;
   height: 60px;
 }
+
+#press-mentions a.logo.baguete {
+  background: url(../images/logos/baguete.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.computer-world-square {
+  background: url(../images/logos/computer-world-square.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#press-mentions a.logo.computer-world {
+  background: url(../images/logos/computer-world.gif) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 237px;
+  height: 39px;
+}
