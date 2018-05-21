@@ -1,3 +1,57 @@
 .starter-template {
   padding: 3rem 1.5rem;
 }
+
+#social-links {
+  margin-top: 60px;
+}
+
+#social-links a.social {
+  border: 0;
+  display: inline-block;
+  margin: 0 16px 32px;
+  opacity: 0.5;
+  text-indent: -9999px;
+  max-width: 200px;
+  vertical-align: middle;
+}
+
+#social-links a.social.linkedin {
+  background: url(../images/social/linkedin.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#social-links a.social.instagram {
+  background: url(../images/social/instagram.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#social-links a.social.github {
+  background: url(../images/social/github.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#social-links a.social.stack-overflow {
+  background: url(../images/social/stack-overflow.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
