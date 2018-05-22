@@ -1,9 +1,5 @@
-.starter-template {
-  padding: 3rem 1.5rem;
-}
-
 #social-links {
-  margin-top: 60px;
+  margin-top: 34px;
 }
 
 #social-links a.social {
@@ -17,41 +13,41 @@
 }
 
 #social-links a.social.linkedin {
-  background: url(../images/social/linkedin.jpg) no-repeat;
+  background: url(../images/social/linkedin.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
 }
 
 #social-links a.social.instagram {
-  background: url(../images/social/instagram.jpg) no-repeat;
+  background: url(../images/social/instagram.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
 }
 
 #social-links a.social.github {
-  background: url(../images/social/github.jpg) no-repeat;
+  background: url(../images/social/github.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
 }
 
 #social-links a.social.stack-overflow {
-  background: url(../images/social/stack-overflow.jpg) no-repeat;
+  background: url(../images/social/stack-overflow.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
 }
