@@ -13,6 +13,17 @@
   vertical-align: middle;
 }
 
+#press-mentions a.logo.product-hunt {
+  background: url(../images/logos/product-hunt-2.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 308px;
+  height: 74px;
+  margin: 0 16px 16px;
+}
+
 #press-mentions a.logo.tecnologia-facil {
   background: url(../images/logos/tecnologia-facil.png) no-repeat;
   -webkit-background-size: 100% 100%;
