@@ -163,3 +163,13 @@
   width: 80px;
   height: 80px;
 }
+
+#press-mentions a.logo.growth-hacking {
+  background: url(../images/logos/growth-hacking.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 65px;
+  height: 65px;
+}
