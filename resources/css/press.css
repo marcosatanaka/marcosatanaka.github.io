@@ -173,3 +173,13 @@
   width: 65px;
   height: 65px;
 }
+
+#press-mentions a.logo.imasters {
+  background: url(../images/logos/imasters.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 57px;
+  height: 57px;
+}
