@@ -49,10 +49,92 @@
             
             <div class="col-md-10 offset-md-1">
               <div class="card mb-6 box-shadow">
-                <img class="card-img-top" src="../resources/images/blog/a.png" alt="kiwi queue">
+                <img class="card-img-top" src="../resources/images/blog/onboarding/0.png" alt="kiwi queue">
                 <div class="card-body">
                   <p class="lead text-muted small">Escrito 28/07/2018</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus, diam sit amet efficitur fermentum, odio justo euismod metus, vitae dapibus nisi ligula non ante. Praesent et aliquet eros. Sed scelerisque lorem turpis, et vestibulum lorem consequat sed. In dictum sapien elit, id convallis dui porttitor vitae. Nulla facilisi. Nullam tincidunt quam eu sapien ullamcorper tincidunt. Ut vestibulum a nunc volutpat posuere. Praesent tempus arcu sed tellus consequat, non hendrerit lacus interdum. In sagittis eget erat eu consequat. Sed consequat commodo mi in tincidunt. Fusce vitae elit quis turpis iaculis elementum. Pellentesque lacus libero, viverra sed efficitur sit amet, sollicitudin et dolor. Suspendisse condimentum fringilla tellus, at interdum ex facilisis nec. Donec vel eros non metus cursus eleifend ut sit amet neque. Nam id egestas velit. Nulla convallis elit et purus commodo pellentesque vitae id nisi.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas felis non cursus finibus. Praesent ligula ex, commodo id tellus vel, ultricies mattis dui. Mauris cursus iaculis dui ut faucibus. Donec imperdiet rhoncus felis, eu vulputate nulla suscipit eget. Curabitur dapibus consectetur felis eget pulvinar. Fusce lobortis erat ut lectus blandit lobortis. Duis nisi metus, pellentesque ut tellus nec, volutpat vestibulum felis. Nulla vel eros lectus. Integer ut pellentesque libero. Suspendisse rutrum sagittis sapien, eget ultricies ex ullamcorper at.</p>
+
+                  <h2>Storyboard</h2>
+
+                  <p>Vamos começar no Storyboard, removendo a View Controller padrão e arrastando uma Collection View Controller. Com a ajuda do Document Outline, selecione a Collection View que está dentro da Collection View Controller. Queremos que a direção do scroll seja horizontal, então vamos configurar da seguinte maneira:</p>
+                  
+                  <img class="card-img-top" src="../resources/images/blog/onboarding/1.png" alt="">
+
+                  <p>Além disso, vamos desmarcar as propriedades Show Horizontal Indicator e Show Vertical Indicator para que não apareçam as barras de rolagem horizontal e vertical. E também as propriedades Bounce On Scroll e Bounce On Zoom, para que não ocorra o efeito de bounce conforme formos navegando pelo onboarding. E também marcar a opção Paging Enabled, para que o scroll nõa fique parado entre uma página e outra.</p>
+
+                  <p>Por fim, ainda no painel Utilities, aba Size inspector, vamos alterar a propriedade Min Spacing For Cells e Min Spacing For Lines para 0. Isto fará qua não haja espaço entre as células, para que cada uma ocupe de fato a tela inteira, conforme o tamanho que definiremos em código.</p>
+                  
+                  <p>A propriedade Items da Collection View controla quantas células ela terá. Para nosso Onboarding, faremos com que a célula ocupe a tela inteira, portanto, Items dirá quantas páginas o Onboarding terá.</p>
+                  
+                  <p>Vamos agora desenhar o protótipo da célula da Collection View. Todas as células seguirão este protótipo, mudaremos apenas as informações exibidas em cada uma. Aquele quadrado no canto superior esquerdo da Collection View é o protótipo da célula. É para dentro dele que arrastaremos os componentes que farão parte do protótipo. Para facilitar isso, aumente seu tamanho (definiremos a altura e largura da célula programaticamente para preencher a tela inteira, portanto seu tamanho no Storyboard não importa).</p>
+                  
+                  <p>Vou usar uma Image View no topo, com dois Labels em baixo, e depois um Button. Pra usar menos Constraints, vamos selecionar tudo e empilhar em uma Stack View vertical:</p>
+                  
+                  <img class="card-img-top" src="../resources/images/blog/onboarding/2.png" alt="">
+                  
+                  <p>Vamos configurar a Stack View para ter a Distribution: Equal Centering e Spacing:Standard. Depois centralizá-la e definir a largura 260px, usando Constraints.</p>
+                  
+                  <img class="card-img-top" src="../resources/images/blog/onboarding/3.png" alt="">
+                  
+                  <p>Para os Labels dentro da Stack View vamos definir a propriedade Lines: 0 para que textos maiores quebrem linha automaticamente. O primeiro label será o título, então usaremos a fonte com Style: Bold e Size: 24px.</p>
+                  
+                  <p>Para a Image View, vamos adicionar uma constraint para altura fixa de 120px. Além disso, o Content Mode será Aspect Fit.</p>
+                  
+                  <p>E o Button terá a  Constraint de altura e largura fixos. A largura será >= 260px, e a altura será 40px.</p>
+
+                  <h2>Código</h2>
+                  
+                  <p>Vamos agora escrever as classes que estarão por trás das views que desenhamos no Storyboard. Vamos precisar das seguintes classes:</p>
+
+                  <ul>
+                    <li><strong>OnboardingCollectionViewController</strong>: classe responsável por tudo referente à Collection View, como definir seu data source e sobrescrever os métodos chamados pelo delegate.</li>
+                    <li><strong>OnboardingCollectionViewCell</strong>: classe responsável por preencher os dados de cada célula da Collection View.</li>
+                    <li><strong>OnboardingModel</strong>: uma struct que definirá a estrutura dos dados que apresentaremos no onboargind.</li>
+                    <li><strong>OnboardingModelFactory</strong>: classe para facilitar a instanciação dos modelos que usaremos no onboarding.</li>
+                  </ul>
+
+                  <script src="https://gist.github.com/marcosatanaka/64947b33445deb0a92b71ce25ec7844f.js"></script>
+
+                  <script src="https://gist.github.com/marcosatanaka/3a5dcdf41a8424824c8c6483b92ef15d.js"></script>
+
+                  <script src="https://gist.github.com/marcosatanaka/6bc26049b603c6c256bdecd0a4fbd7ee.js"></script>
+
+                  <script src="https://gist.github.com/marcosatanaka/0681de450861592b54f214c06a28ebad.js"></script>
+
+                  <h3>UICollectionViewController</h3>
+                  
+                  <p>Depois de criar os arquivos, volte ao Storyboard e defina as classes da Collection View Controller e da Collection View Cell. Além disso, defina o Reuse Identifier da célula como "OnboardingCell" (painel Utilities, na aba Attributes inspector).</p>
+                  
+                  <p>Vamos agora implementar os métodos da classe OnboardingCollectionViewController. Nela iremos definir a quantidade de páginas que nosso onboarding terá, quais as informações de cada página, o tamanho que cada página ocupará na tela (no caso, a tela inteira), e também criaremos um UIPageControl para indicar ao usuário qual página ele está atualmente.</p>
+
+                  <script src="https://gist.github.com/marcosatanaka/c034761abb1873b6d2dc30710058d5a8.js"></script>
+                  
+                  <p>Usando a factory criada anteriormente, instanciamos os conteúdos das três páginas de onboarding e colocamos na constante pages. Esta constante será a fonte de dados que alimentará a Collection View. Criamos também um UIPageControl e adicionamos programaticamente na view, definindo as constraints no métod addPageControlToView().</p>
+
+                  <p>O tamanho de cada célula da Collection View é definido collectionView(_:layout:sizeForItemAt:). Nele definimos que o tamanho será igual ao tamanho da Collection View, ou seja, a tela inteira.</p>
+
+                  <p>O UIPageControl é atualizado no método scrollViewWillEndDragging(_:withVelocity:targetContentOffset:).</p>
+
+                  <h3>UICollectionViewCell</h3>
+
+                  <p>A OnboardingCollectionViewCell terá a referência para os componentes de cada célula e um método responsável por preencher essas referências com os dados. Para as referências temos que vincular segurando o ctrl e arrastando, do componente no Storyboard para o código:</p>
+                  
+                  <img class="card-img-top" src="../resources/images/blog/onboarding/4.png" alt="">
+
+                  <p>Defina também uma constante estática para o reuse identifier da célula. É o mesmo que definimos no Storyboard. Estamos utilizando ele no view controller, para referenciar a célula que será reaproveitada. A classe final ficará assim:</p>
+
+                  <script src="https://gist.github.com/marcosatanaka/d0385ee70c2762512f2d5957ab18496f.js"></script>
+
+                  <p>Perceba também que as primeiras instruções do método fill definem a imagem de background da célula com base no OnboardingModel recebido.</p>
+
+                  <h3>Resources</h3>
+
+                  <p>O último passo é definir os resources que iremos utilizar para o background da célula, e também para a imagem do topo de cada página. Para isto basta editar o arquivo Assets.xcassets, dar um nome para cada recurso, e arrastar as imagens para os respectivos slots:</p>
+                  
+                  <img class="card-img-top" src="../resources/images/blog/onboarding/5.png" alt="">
+
+                  <p>Obs.: em um projeto real você vai querer definir as imagens para as resoluções 1x, 2x e 3x, para que a correta seja utilizada conforme a densidade de pixels do aparelho. Para facilitar este exemplo, estou usando uma imagem única para as três densidades.</p>
+                  
                   <span class="badge badge-pill badge-light">Swift</span>
                   <span class="badge badge-pill badge-light">UICollectionView</span>
                   <span class="badge badge-pill badge-light">Storyboard</span>
