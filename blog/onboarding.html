@@ -51,14 +51,17 @@
               <div class="card mb-6 box-shadow">
                 <img class="card-img-top" src="../resources/images/blog/onboarding/0.png" alt="kiwi queue">
                 <div class="card-body">
-                  <p class="lead text-muted small">Escrito 28/07/2018</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas felis non cursus finibus. Praesent ligula ex, commodo id tellus vel, ultricies mattis dui. Mauris cursus iaculis dui ut faucibus. Donec imperdiet rhoncus felis, eu vulputate nulla suscipit eget. Curabitur dapibus consectetur felis eget pulvinar. Fusce lobortis erat ut lectus blandit lobortis. Duis nisi metus, pellentesque ut tellus nec, volutpat vestibulum felis. Nulla vel eros lectus. Integer ut pellentesque libero. Suspendisse rutrum sagittis sapien, eget ultricies ex ullamcorper at.</p>
+                  <p class="lead text-muted small">Escrito em 28/07/2018</p>
+
+                  <p>Onboarding o nome dado ao processo de tornar alguém familiar a algo. No contexto de apps e produtos digitais, onboarding é a oportunidade que temos para apresentar as principais funcionalidades ou diferenciais de um app, novidades de uma versão, ou também tentar convencer os usuários a se registrarem no serviço.</p>
+
+                  <p>Neste tutorial irei mostrar como criar um processo de onboarding utilizando UICollectionView, e desenhando a interface no Storyboard. Os controllers serão escritos em Swift 4. Se preferir, o <a href="https://github.com/marcosatanaka/onboarding-ios">projeto de exemplo está no GitHub</a>.</p>
 
                   <h2>Storyboard</h2>
 
                   <p>Vamos começar no Storyboard, removendo a View Controller padrão e arrastando uma Collection View Controller. Com a ajuda do Document Outline, selecione a Collection View que está dentro da Collection View Controller. Queremos que a direção do scroll seja horizontal, então vamos configurar da seguinte maneira:</p>
                   
-                  <img class="card-img-top" src="../resources/images/blog/onboarding/1.png" alt="">
+                  <img class="post-img" src="../resources/images/blog/onboarding/1.png" alt="">
 
                   <p>Além disso, vamos desmarcar as propriedades Show Horizontal Indicator e Show Vertical Indicator para que não apareçam as barras de rolagem horizontal e vertical. E também as propriedades Bounce On Scroll e Bounce On Zoom, para que não ocorra o efeito de bounce conforme formos navegando pelo onboarding. E também marcar a opção Paging Enabled, para que o scroll nõa fique parado entre uma página e outra.</p>
 
@@ -70,11 +73,11 @@
                   
                   <p>Vou usar uma Image View no topo, com dois Labels em baixo, e depois um Button. Pra usar menos Constraints, vamos selecionar tudo e empilhar em uma Stack View vertical:</p>
                   
-                  <img class="card-img-top" src="../resources/images/blog/onboarding/2.png" alt="">
+                  <img class="post-img" src="../resources/images/blog/onboarding/2.png" alt="">
                   
                   <p>Vamos configurar a Stack View para ter a Distribution: Equal Centering e Spacing:Standard. Depois centralizá-la e definir a largura 260px, usando Constraints.</p>
                   
-                  <img class="card-img-top" src="../resources/images/blog/onboarding/3.png" alt="">
+                  <img class="post-img" src="../resources/images/blog/onboarding/3.png" alt="">
                   
                   <p>Para os Labels dentro da Stack View vamos definir a propriedade Lines: 0 para que textos maiores quebrem linha automaticamente. O primeiro label será o título, então usaremos a fonte com Style: Bold e Size: 24px.</p>
                   
@@ -119,7 +122,7 @@
 
                   <p>A OnboardingCollectionViewCell terá a referência para os componentes de cada célula e um método responsável por preencher essas referências com os dados. Para as referências temos que vincular segurando o ctrl e arrastando, do componente no Storyboard para o código:</p>
                   
-                  <img class="card-img-top" src="../resources/images/blog/onboarding/4.png" alt="">
+                  <img class="post-img" src="../resources/images/blog/onboarding/4.png" alt="">
 
                   <p>Defina também uma constante estática para o reuse identifier da célula. É o mesmo que definimos no Storyboard. Estamos utilizando ele no view controller, para referenciar a célula que será reaproveitada. A classe final ficará assim:</p>
 
@@ -131,7 +134,7 @@
 
                   <p>O último passo é definir os resources que iremos utilizar para o background da célula, e também para a imagem do topo de cada página. Para isto basta editar o arquivo Assets.xcassets, dar um nome para cada recurso, e arrastar as imagens para os respectivos slots:</p>
                   
-                  <img class="card-img-top" src="../resources/images/blog/onboarding/5.png" alt="">
+                  <img class="post-img" src="../resources/images/blog/onboarding/5.png" alt="">
 
                   <p>Obs.: em um projeto real você vai querer definir as imagens para as resoluções 1x, 2x e 3x, para que a correta seja utilizada conforme a densidade de pixels do aparelho. Para facilitar este exemplo, estou usando uma imagem única para as três densidades.</p>
                   
