@@ -1,15 +1,15 @@
-main {
+.content {
   font-family: 'Merriweather', serif;
   letter-spacing: 0.01rem;
   line-height: 1.75em;
   color: #3A4145;
 }
 
-main >* h2, h3 {
+.content >* h2, h3 {
   line-height: 2.4;
 }
 
-main >* h3 {
+.content >* h3 {
   font-size: 1.5rem;
 }
 
