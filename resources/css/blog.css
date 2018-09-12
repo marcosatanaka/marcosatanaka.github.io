@@ -6,7 +6,8 @@
 }
 
 .content >* h2, h3 {
-  line-height: 2.4;
+  padding-top: 30px;
+  line-height: 1.5;
 }
 
 .content >* h3 {
@@ -21,8 +22,6 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 .post-title {
   font-size: 1.6rem;

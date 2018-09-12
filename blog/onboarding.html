@@ -40,124 +40,115 @@
       <section class="jumbotron text-center">
         <div class="container blog">
           <h1 class="jumbotron-heading">Criando onboarding com UICollectionView e Storyboard</h1>
+          <p class="lead text-muted small">Escrito em 28/07/2018 | Última atualização 07/08/2018</p>
         </div>
       </section>
 
-      <div class="py-5 bg-light">
-        <div class="container">
-
-          <div class="row ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-8 offset-md-2">
+            <img class="post-img" src="../resources/images/blog/onboarding/0.png" alt="Onboarding que iremos criar">
             
-            <div class="col-md-10 offset-md-1">
-              <div class="card mb-6 box-shadow">
-                <img class="card-img-top" src="../resources/images/blog/onboarding/0.png" alt="kiwi queue">
-                <div class="card-body">
-                  <p class="lead text-muted small">Escrito em 28/07/2018 ~ Última atualização 07/08/2018</p>
+            <p>Sabe aquelas telas de boas vindas que vemos quando abrimos um app pela primeira vez? Este processo é feito para familiarizar o usuário com o app e suas funções. É uma oportunidade para apresentar as principais funcionalidades ou diferenciais do app, novidades de uma versão, ou tentar convencer usuários a se registrarem no serviço.</p>
 
-                  <p>Sabe aquelas telas de boas vindas que vemos quando abrimos um app pela primeira vez? Este processo é feito para familiarizar o usuário com o app e suas funções. É uma oportunidade para apresentar as principais funcionalidades ou diferenciais do app, novidades de uma versão, ou tentar convencer usuários a se registrarem no serviço.</p>
+            <p>Neste tutorial irei ensinar como criar um onboarding com <code>UICollectionView</code>, desenhado no Storyboard. Os controllers das views serão escritos em Swift 4. Se quiser baixar o projeto completo, <a href="https://github.com/marcosatanaka/onboarding-ios">siga este link para o GitHub</a>.</p>
 
-                  <p>Neste tutorial irei ensinar como criar um onboarding com <code>UICollectionView</code>, desenhado no Storyboard. Os controllers das views serão escritos em Swift 4. Se quiser baixar o projeto completo, <a href="https://github.com/marcosatanaka/onboarding-ios">siga este link para o GitHub</a>.</p>
+            <h2>Storyboard</h2>
 
-                  <h2>Storyboard</h2>
+            <p>Acho legal usar o storyboard pra desenhar as views porque economiza muito tempo e linhas de código 😌, fora a vantagem de poder ver todo o fluxo de telas da aplicação de uma vez!</p>
 
-                  <p>Acho legal usar o storyboard pra desenhar as views porque economiza muito tempo e linhas de código 😌, fora a vantagem de poder ver todo o fluxo de telas da aplicação de uma vez!</p>
+            <p>Por isso, vamos criar um novo projeto, abrir o storyboard, remover a View Controller padrão e colocar em seu lugar uma Collection View Controller. Com a ajuda do <em>Document Outline</em>, selecione a Collection View que está dentro da Collection View Controller. Queremos alterar algumas propriedades para que ela se comporte como um omboarding com scroll horizontal:</p>
+            
+            <img class="post-img" src="../resources/images/blog/onboarding/1.png" alt="">
 
-                  <p>Por isso, vamos criar um novo projeto, abrir o storyboard, remover a View Controller padrão e colocar em seu lugar uma Collection View Controller. Com a ajuda do <em>Document Outline</em>, selecione a Collection View que está dentro da Collection View Controller. Queremos alterar algumas propriedades para que ela se comporte como um omboarding com scroll horizontal:</p>
-                  
-                  <img class="post-img" src="../resources/images/blog/onboarding/1.png" alt="">
+            <p>Além disso, vamos desmarcar as propriedades <em>Show Horizontal Indicator</em> e <em>Show Vertical Indicator</em> para que as barras de rolagem não apareçam. Desmarque também <em>Bounce On Scroll</em> e <em>Bounce On Zoom</em>, para que não ocorra o efeito de bounce ao fazer o scroll. E também marque a opção <em>Paging Enabled</em>, para que o scroll não pare entre uma página e outra.</p>
 
-                  <p>Além disso, vamos desmarcar as propriedades <em>Show Horizontal Indicator</em> e <em>Show Vertical Indicator</em> para que as barras de rolagem não apareçam. Desmarque também <em>Bounce On Scroll</em> e <em>Bounce On Zoom</em>, para que não ocorra o efeito de bounce ao fazer o scroll. E também marque a opção <em>Paging Enabled</em>, para que o scroll não pare entre uma página e outra.</p>
+            <p>Por fim, ainda no painel <em>Utilities</em>, na aba <em>Size inspector</em>, vamos alterar as propriedades <em>Min Spacing For Cells</em> e <em>Min Spacing For Lines</em> para 0. Isto fará qua não haja espaço entre as células, para que cada uma ocupe de fato a tela inteira (este tamanho vamos definir em código mais adiante 👨‍💻).</p>
+            
+            <p>A propriedade <em>Items</em> da Collection View controla quantas células ela possui. Neste onboarding faremos com que a célula ocupe a tela inteira. Assim, Items dirá quantas páginas vamos ter no onboarding.</p>
+            
+            <p>Vamos agora desenhar o protótipo da célula da Collection View. Todas as células seguirão este protótipo, mudaremos apenas as informações de cada uma. O pequeno quadrado no canto superior esquerdo da Collection View (🔬) é o protótipo da célula. Dentro dele ficarão os componentes visuais que compõem o protótipo. Para conseguirmos posicioná-los, aumente o tamanho da célula (não se preocupe com o tamanho real, pois definiremos isso programaticamente para preencher a tela inteira).</p>
+            
+            <p>O layout será uma Image View no topo, com dois Labels em baixo e um Button. Para diminuir o número de Constraints, empilharemos tudo em uma Stack View vertical:</p>
+            
+            <img class="post-img" src="../resources/images/blog/onboarding/2.png" alt="">
+            
+            <p>Vamos configurar a Stack View para ter <em>Distribution: Equal Centering</em> e <em>Spacing: Standard</em>. Depois, centralizá-la e definir a largura de 260px usando constraints.</p>
+            
+            <img class="post-img" src="../resources/images/blog/onboarding/3.png" alt="">
+            
+            <p>Para os Labels dentro da Stack View, defina a propriedade <em>Lines: 0</em> para que textos maiores quebrem a linha automaticamente. O primeiro label será o título, então usaremos a fonte com <em>Style: Bold</em> e <em>Size: 24px</em>.</p>
+            
+            <p>Para a Image View, vamos adicionar uma constraint de altura fixa 120px. Além disso, o <em>Content Mode</em> será <em>Aspect Fit</em>.</p>
+            
+            <p>E o Button terá a constraint de altura e largura fixos. A largura será >= 260px, e a altura será 40px. Assim ele ocupa a largura inteira da Stack View.</p>
 
-                  <p>Por fim, ainda no painel <em>Utilities</em>, na aba <em>Size inspector</em>, vamos alterar as propriedades <em>Min Spacing For Cells</em> e <em>Min Spacing For Lines</em> para 0. Isto fará qua não haja espaço entre as células, para que cada uma ocupe de fato a tela inteira (este tamanho vamos definir em código mais adiante 👨‍💻).</p>
-                  
-                  <p>A propriedade <em>Items</em> da Collection View controla quantas células ela possui. Neste onboarding faremos com que a célula ocupe a tela inteira. Assim, Items dirá quantas páginas vamos ter no onboarding.</p>
-                  
-                  <p>Vamos agora desenhar o protótipo da célula da Collection View. Todas as células seguirão este protótipo, mudaremos apenas as informações de cada uma. O pequeno quadrado no canto superior esquerdo da Collection View (🔬) é o protótipo da célula. Dentro dele ficarão os componentes visuais que compõem o protótipo. Para conseguirmos posicioná-los, aumente o tamanho da célula (não se preocupe com o tamanho real, pois definiremos isso programaticamente para preencher a tela inteira).</p>
-                  
-                  <p>O layout será uma Image View no topo, com dois Labels em baixo e um Button. Para diminuir o número de Constraints, empilharemos tudo em uma Stack View vertical:</p>
-                  
-                  <img class="post-img" src="../resources/images/blog/onboarding/2.png" alt="">
-                  
-                  <p>Vamos configurar a Stack View para ter <em>Distribution: Equal Centering</em> e <em>Spacing: Standard</em>. Depois, centralizá-la e definir a largura de 260px usando constraints.</p>
-                  
-                  <img class="post-img" src="../resources/images/blog/onboarding/3.png" alt="">
-                  
-                  <p>Para os Labels dentro da Stack View, defina a propriedade <em>Lines: 0</em> para que textos maiores quebrem a linha automaticamente. O primeiro label será o título, então usaremos a fonte com <em>Style: Bold</em> e <em>Size: 24px</em>.</p>
-                  
-                  <p>Para a Image View, vamos adicionar uma constraint de altura fixa 120px. Além disso, o <em>Content Mode</em> será <em>Aspect Fit</em>.</p>
-                  
-                  <p>E o Button terá a constraint de altura e largura fixos. A largura será >= 260px, e a altura será 40px. Assim ele ocupa a largura inteira da Stack View.</p>
+            <h2>Código</h2>
+            
+            <p>Vamos agora escrever as classes por trás das views que desenhamos no storyboard. Precisaremos das seguintes:</p>
 
-                  <h2>Código</h2>
-                  
-                  <p>Vamos agora escrever as classes por trás das views que desenhamos no storyboard. Precisaremos das seguintes:</p>
+            <ul>
+              <li><code>OnboardingCollectionViewController</code>: responsável pela Collection View - data source e delegate.</li>
+              <li><code>OnboardingCollectionViewCell</code>: responsável por preencher os dados de cada célula da Collection View.</li>
+              <li><code>OnboardingModel</code>: struct que define a estrutura dos dados apresentados no onboarding.</li>
+              <li><code>OnboardingModelFactory</code>: para facilitar a instanciação dos modelos que serão usados no onboarding.</li>
+            </ul>
 
-                  <ul>
-                    <li><code>OnboardingCollectionViewController</code>: responsável pela Collection View - data source e delegate.</li>
-                    <li><code>OnboardingCollectionViewCell</code>: responsável por preencher os dados de cada célula da Collection View.</li>
-                    <li><code>OnboardingModel</code>: struct que define a estrutura dos dados apresentados no onboarding.</li>
-                    <li><code>OnboardingModelFactory</code>: para facilitar a instanciação dos modelos que serão usados no onboarding.</li>
-                  </ul>
+            <p>Seguem abaixo:</p>
 
-                  <p>Seguem abaixo:</p>
+            <script src="https://gist.github.com/marcosatanaka/64947b33445deb0a92b71ce25ec7844f.js"></script>
 
-                  <script src="https://gist.github.com/marcosatanaka/64947b33445deb0a92b71ce25ec7844f.js"></script>
+            <script src="https://gist.github.com/marcosatanaka/3a5dcdf41a8424824c8c6483b92ef15d.js"></script>
 
-                  <script src="https://gist.github.com/marcosatanaka/3a5dcdf41a8424824c8c6483b92ef15d.js"></script>
+            <script src="https://gist.github.com/marcosatanaka/6bc26049b603c6c256bdecd0a4fbd7ee.js"></script>
 
-                  <script src="https://gist.github.com/marcosatanaka/6bc26049b603c6c256bdecd0a4fbd7ee.js"></script>
+            <script src="https://gist.github.com/marcosatanaka/0681de450861592b54f214c06a28ebad.js"></script>
 
-                  <script src="https://gist.github.com/marcosatanaka/0681de450861592b54f214c06a28ebad.js"></script>
+            <h3>UICollectionViewController</h3>
+            
+            <p>Depois de criar os arquivos, volte para o storyboard e defina as classes da Collection View Controller e da Collection View Cell. Além disso, defina o <em>Reuse Identifier</em> da célula como "OnboardingCell" (painel <em>Utilities</em>, na aba <em>Attributes inspector</em>).</p>
+            
+            <p>Vamos agora implementar os métodos da classe <code>OnboardingCollectionViewController</code>. Nela definiremos a quantidade de páginas do onboarding, as informações de cada página, o tamanho (tela inteira), e também colocaremos um <code>UIPageControl</code> para indicar ao usuário qual página ele está atualmente.</p>
 
-                  <h3>UICollectionViewController</h3>
-                  
-                  <p>Depois de criar os arquivos, volte para o storyboard e defina as classes da Collection View Controller e da Collection View Cell. Além disso, defina o <em>Reuse Identifier</em> da célula como "OnboardingCell" (painel <em>Utilities</em>, na aba <em>Attributes inspector</em>).</p>
-                  
-                  <p>Vamos agora implementar os métodos da classe <code>OnboardingCollectionViewController</code>. Nela definiremos a quantidade de páginas do onboarding, as informações de cada página, o tamanho (tela inteira), e também colocaremos um <code>UIPageControl</code> para indicar ao usuário qual página ele está atualmente.</p>
+            <script src="https://gist.github.com/marcosatanaka/c034761abb1873b6d2dc30710058d5a8.js"></script>
+            
+            <p>Usando a factory criada anteriormente, instanciamos os conteúdos das três páginas de onboarding e colocamos na constante pages. Ela é a fonte de dados que alimenta a Collection View. Criamos também um <code>UIPageControl</code> e adicionamos programaticamente na view, definindo as constraints no método <code>ddPageControlToView()</code>.</p>
 
-                  <script src="https://gist.github.com/marcosatanaka/c034761abb1873b6d2dc30710058d5a8.js"></script>
-                  
-                  <p>Usando a factory criada anteriormente, instanciamos os conteúdos das três páginas de onboarding e colocamos na constante pages. Ela é a fonte de dados que alimenta a Collection View. Criamos também um <code>UIPageControl</code> e adicionamos programaticamente na view, definindo as constraints no método <code>ddPageControlToView()</code>.</p>
+            <p>O tamanho de cada célula da Collection View é definido no método <code>collectionView(_:layout:sizeForItemAt:)</code>. O tamanho será igual ao tamanho da Collection View, ou seja, a tela inteira.</p>
 
-                  <p>O tamanho de cada célula da Collection View é definido no método <code>collectionView(_:layout:sizeForItemAt:)</code>. O tamanho será igual ao tamanho da Collection View, ou seja, a tela inteira.</p>
+            <p>O <code>UIPageControl</code> é atualizado no método <code>scrollViewWillEndDragging(_:withVelocity:targetContentOffset:)</code>.</p>
 
-                  <p>O <code>UIPageControl</code> é atualizado no método <code>scrollViewWillEndDragging(_:withVelocity:targetContentOffset:)</code>.</p>
+            <h3>UICollectionViewCell</h3>
 
-                  <h3>UICollectionViewCell</h3>
+            <p>A <code>OnboardingCollectionViewCell</code> tem referência para os componentes de cada célula, e um método responsável por preencher essas referências com os dados:</p>
+            
+            <img class="post-img" src="../resources/images/blog/onboarding/4.png" alt="">
 
-                  <p>A <code>OnboardingCollectionViewCell</code> tem referência para os componentes de cada célula, e um método responsável por preencher essas referências com os dados:</p>
-                  
-                  <img class="post-img" src="../resources/images/blog/onboarding/4.png" alt="">
+            <p>Definimos também uma constante estática para o reuse identifier da célula (o mesmo definido no storyboard). Vamos usar essa constante no view controller, para referenciar a célula que será reaproveitada. A classe final ficará assim:</p>
 
-                  <p>Definimos também uma constante estática para o reuse identifier da célula (o mesmo definido no storyboard). Vamos usar essa constante no view controller, para referenciar a célula que será reaproveitada. A classe final ficará assim:</p>
+            <script src="https://gist.github.com/marcosatanaka/d0385ee70c2762512f2d5957ab18496f.js"></script>
 
-                  <script src="https://gist.github.com/marcosatanaka/d0385ee70c2762512f2d5957ab18496f.js"></script>
+            <p>Perceba também que as primeiras instruções do método <code>fill</code> definem a cor de background da célula com base no <code>OnboardingModel</code> recebido.</p>
 
-                  <p>Perceba também que as primeiras instruções do método <code>fill</code> definem a cor de background da célula com base no <code>OnboardingModel</code> recebido.</p>
+            <h3>Resources</h3>
 
-                  <h3>Resources</h3>
+            <p>O último passo é definir os resources usados em cada página. Basta editar o arquivo <code>Assets.xcassets</code>, dar um nome para cada recurso e arrastar as imagens para os respectivos slots:</p>
+            
+            <img class="post-img" src="../resources/images/blog/onboarding/5.png" alt="">
 
-                  <p>O último passo é definir os resources usados em cada página. Basta editar o arquivo <code>Assets.xcassets</code>, dar um nome para cada recurso e arrastar as imagens para os respectivos slots:</p>
-                  
-                  <img class="post-img" src="../resources/images/blog/onboarding/5.png" alt="">
+            <p>Obs.: em um projeto real você vai querer definir as imagens para as resoluções 1x, 2x e 3x, para que a correta seja utilizada conforme a densidade de pixels do aparelho. Para facilitar este exemplo, estou usando uma imagem única para as três densidades 😝</p>
 
-                  <p>Obs.: em um projeto real você vai querer definir as imagens para as resoluções 1x, 2x e 3x, para que a correta seja utilizada conforme a densidade de pixels do aparelho. Para facilitar este exemplo, estou usando uma imagem única para as três densidades 😝</p>
+            <h2>Alguns detalhes</h2>
 
-                  <h2>Alguns detalhes</h2>
+            <p>Fora o que está descrito aqui, melhorei alguns outros detalhes como o espaçamento entre a imagem e os textos, alguns detalhes do botão, e a organização dos arquivos do projeto. A ideia é que ele leve à view inicial do app, ou para o login. Recomendo baixar o projeto do GitHub para ver como ficou o resultado final.</p>
 
-                  <p>Fora o que está descrito aqui, melhorei alguns outros detalhes como o espaçamento entre a imagem e os textos, alguns detalhes do botão, e a organização dos arquivos do projeto. A ideia é que ele leve à view inicial do app, ou para o login. Recomendo baixar o projeto do GitHub para ver como ficou o resultado final.</p>
-
-                  <p>Conforme novas versões do iOS e do Swift forem saindo, irei atualizar este tutorial para acompanhar as novidades. E gostaria também de receber sugestões de melhorias neste esquema ou formas melhores de criar onboarding no iOS, portanto, se tiver alguma sugestão, não hesite em compartilhar! 😉</p>
-                  
-                  <span class="badge badge-pill badge-light">Swift</span>
-                  <span class="badge badge-pill badge-light">UICollectionView</span>
-                  <span class="badge badge-pill badge-light">Storyboard</span>
-                  <span class="badge badge-pill badge-light">Onboard</span>
-                  <span class="badge badge-pill badge-light">Tutorial</span>
-                </div>
-              </div>
-            </div>
-
+            <p>Conforme novas versões do iOS e do Swift forem saindo, irei atualizar este tutorial para acompanhar as novidades. E gostaria também de receber sugestões de melhorias neste esquema ou formas melhores de criar onboarding no iOS, portanto, se tiver alguma sugestão, não hesite em compartilhar! 😉</p>
+            
+            <span class="badge badge-pill badge-light">Swift</span>
+            <span class="badge badge-pill badge-light">UICollectionView</span>
+            <span class="badge badge-pill badge-light">Storyboard</span>
+            <span class="badge badge-pill badge-light">Onboard</span>
+            <span class="badge badge-pill badge-light">Tutorial</span>
           </div>
         </div>
       </div>
