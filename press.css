@@ -1,0 +1,207 @@
+#press-mentions {
+  margin-left: 1px;
+  margin-top: 15px;
+}
+
+#press-mentions a.logo {
+  border: 0;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 8px;
+  opacity: 0.8;
+  text-indent: -9999px;
+  max-width: 200px;
+  vertical-align: middle;
+}
+
+#press-mentions a.logo.product-hunt-large {
+  background: url(images/logos/product-hunt-2.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 111px;
+  height: 45px;
+}
+
+#press-mentions a.logo.product-hunt {
+  background: url(images/logos/product-hunt.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.tecnologia-facil {
+  background: url(images/logos/tecnologia-facil.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.vazante-net {
+  background: url(images/logos/vazante-net.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.giga {
+  background: url(images/logos/33-giga.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.games-apps-reviews {
+  background: url(images/logos/games-apps-reviews.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.feedmyapp {
+  background: url(images/logos/feed-my-app.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.inforchannel {
+  background: url(images/logos/inforchannel.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.maringa-post {
+  background: url(images/logos/maringa-post.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.zoom-zine {
+  background: url(images/logos/zoom-zine.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.blog-moreira {
+  background: url(images/logos/blog-moreira.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.parana-shop {
+  background: url(images/logos/parana-shop.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.baguete {
+  background: url(images/logos/baguete.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.computer-world-square {
+  background: url(images/logos/computer-world-square.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.computer-world {
+  background: url(images/logos/computer-world.gif) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 119px;
+  height: 20px;
+}
+
+#press-mentions a.logo.idg-now {
+  background: url(images/logos/idg-now.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.growth-hacking {
+  background: url(images/logos/growth-hacking.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+#press-mentions a.logo.imasters {
+  background: url(images/logos/imasters.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+
+#press-mentions a.logo.db1 {
+  background: url(images/logos/db1.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}

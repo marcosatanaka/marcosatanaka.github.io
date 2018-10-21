@@ -1,0 +1,17 @@
+a {
+	color: #4a4a4a;
+}
+
+.hero {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.download {
+  margin-top: 20px;
+}
+
+.video-thumbnail {
+  margin-top: 20px;
+  border-radius: 10px;
+}
