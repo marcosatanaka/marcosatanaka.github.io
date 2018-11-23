@@ -205,3 +205,43 @@
   width: 45px;
   height: 45px;
 }
+
+.press-mentions a.logo.ninetofivemac {
+  background: url(images/logos/9to5mac.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.press-mentions a.logo.makemac {
+  background: url(images/logos/makemac.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.press-mentions a.logo.applenovinky {
+  background: url(images/logos/apple-novinky.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.press-mentions a.logo.itopnews {
+  background: url(images/logos/itopnews.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
