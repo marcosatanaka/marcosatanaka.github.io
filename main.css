@@ -2,6 +2,28 @@ a {
 	color: #4a4a4a;
 }
 
+a:hover {
+  color: hsl(204, 86%, 53%);
+}
+
+ul#horizontal li {
+  display:inline;
+  margin-right: 10px;
+}
+
+.project-tags {
+	font-size: 70%;
+}
+
+.article-item {
+	margin-top: 26px;
+	margin-bottom: 10px;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
 .hero {
 	padding-top: 60px;
 	padding-bottom: 60px;
