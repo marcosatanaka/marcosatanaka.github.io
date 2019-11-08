@@ -297,6 +297,16 @@
   height: 45px;
 }
 
+.press-mentions a.logo.clubmacstories {
+  background: url(images/logos/club-macstories.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
 .press-mentions a.logo.leaddigital {
   background: url(images/logos/lead-digital.jpg) no-repeat;
   -webkit-background-size: 100% 100%;
@@ -319,6 +329,16 @@
 
 .press-mentions a.logo.ww {
   background: url(images/logos/ww.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.press-mentions a.logo.chorusfm {
+  background: url(images/logos/chorusfm.png) no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
