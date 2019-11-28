@@ -356,3 +356,13 @@
   width: 45px;
   height: 45px;
 }
+
+.press-mentions a.logo.geeksmodo {
+  background: url(images/logos/geeksmodo.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
