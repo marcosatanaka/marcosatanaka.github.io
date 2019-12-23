@@ -307,6 +307,16 @@
   height: 45px;
 }
 
+.press-mentions a.logo.macstoriesselects {
+  background: url(images/logos/macstories-selects.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+}
+
 .press-mentions a.logo.leaddigital {
   background: url(images/logos/lead-digital.jpg) no-repeat;
   -webkit-background-size: 100% 100%;
