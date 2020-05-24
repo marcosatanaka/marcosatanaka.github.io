@@ -1,3 +1,7 @@
+p {
+  opacity: 0.95;
+}
+
 a {
 	color: #4a4a4a;
 }
@@ -40,4 +44,8 @@ ul#horizontal li {
 
 .highlight-color {
   color: rgb(49,168,246) !important;
+}
+
+.card {
+  border-radius: 5px;
 }

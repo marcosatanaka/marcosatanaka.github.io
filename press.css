@@ -1,3 +1,12 @@
+.large-press-logo {
+  border-radius: 8px;
+  max-width: 80px;
+}
+
+.round-press-logo {
+  border-radius: 50%;
+}
+
 .press-mentions {
   margin-left: 1px;
   margin-top: 15px;
