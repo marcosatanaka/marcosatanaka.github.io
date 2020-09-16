@@ -49,3 +49,7 @@ ul#horizontal li {
 .card {
   border-radius: 5px;
 }
+
+.card-inset {
+  background: rgba(242, 242, 247, 0.16);
+}

@@ -7,6 +7,10 @@
   border-radius: 50%;
 }
 
+.round-corners-press-logo {
+  border-radius: 4px;
+}
+
 .press-mentions {
   margin-left: 1px;
   margin-top: 15px;
