@@ -33,6 +33,11 @@ ul#horizontal li {
 	padding-bottom: 60px;
 }
 
+.hero-body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .download {
   margin-top: 20px;
 }
