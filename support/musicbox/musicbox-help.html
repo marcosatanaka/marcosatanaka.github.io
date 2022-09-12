@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MusicBox Help</title>
+    <meta name="Description" content="MusicBox Help">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bulma.min.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../press.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="section" style="background-color: #383838;">
+        <div class="container">
+            <!-- Top nav bar -->
+            <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                    <h1 class="title">
+                        <div class="has-text-weight-semibold is-inline has-text-white">MusicBox Help</div>
+                    </h1>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Body -->
+    <section class="hero" style="padding-top: 0px;">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-12">
+                    <section class="section">
+                        <div class="columns">
+                            <div class="column is-3">
+                                <div class="card-image has-text-centered">
+                                    <figure class="image is-128x128 is-inline-block zoom">
+                                        <img alt="Download MusicBox on the App Store" src="icon_512x512.png">
+                                    </figure>
+                                </div>
+
+                                <div class="content">
+                                    <ol>
+                                        <li><a class="underlined" href="#adding-music">Adding Music</a></li>
+                                        <ol>
+                                            <li><a class="underlined" href="#adding-music-with-url">With URL</a></li>
+                                            <li><a class="underlined" href="#adding-music-from-other-apps">From Other Apps</a></li>
+                                            <li><a class="underlined" href="#adding-music-with-drag-and-drop">With Drag and Drop</a></li>
+                                            <li><a class="underlined" href="#adding-music-with-shortcuts">With Shortcuts</a></li>
+                                            <li><a class="underlined" href="#adding-music-from-playlist">From a Playlist</a></li>
+                                        </ol>
+                                        <li><a class="underlined" href="#tags">Tags</a></li>
+                                        <ol>
+                                            <li><a class="underlined" href="#tags-creating">Creating</a></li>
+                                            <li><a class="underlined" href="#tags-editing-deleting">Editing or Deleting</a></li>
+                                            <li><a class="underlined" href="#tags-auto-tagging">Auto-Tagging</a></li>
+                                        </ol>
+                                        <li><a class="underlined" href="#search">Search</a></li>
+                                        <ol>
+                                            <li><a class="underlined" href="#search-smart-search">Smart Search</a></li>
+                                        </ol>
+                                        <li><a class="underlined" href="#shortcuts">Shortcuts</a></li>
+                                        <li><a class="underlined" href="#widgets">Widgets</a></li>
+                                        <li><a class="underlined" href="#contact">Contact</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        	<div class="column is-6 is-offset-0">
+                                <!-- ADDING MUSIC -->
+                                
+                                <p class="title is-3" id="adding-music">Adding Music</p>
+                                <p>MusicBox supports albums and songs from Apple Music, Spotify, Deezer, and Bandcamp. You can add items in several different ways:</p>
+                                
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-music-with-url">With URL</p>
+                                <p>Click the <strong>Add Music button (+)</strong> in the toolbar to open the Add Music window. You can also acces it from the <strong>File → Add Album or Song</strong> menu, or also with the <strong>⌘N</strong> keyboard shortcut:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Add Music window" src="SCR-20220912-d2q.png">
+                                </figure>
+
+                                <p>You can paste multiple album/song URLs in the URLs text field, separating each one with a new line. Write notes in the Notes field to add them to all items. You can also choose multiple tags to add to the albums/songs using the Add Tag button.</p>
+
+                                <p style="padding-top: 1em;">Once everything's ready, click the <strong>Import</strong> button to import the items.</p>
+                                
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-music-from-other-apps">From Other Apps</p>
+                                <p>You can add albums and songs using MusicBox directly from the Share Menu. On an app that supports sharing, click the <strong>Share</strong> button and choose <strong>Add to MusicBox</strong>:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Add to MusicBox in the Share Menu" src="SCR-20220912-d2w.png">
+                                </figure>
+
+                                <p>If the Add to MusicBox button is not visible, click More... and activate it in the Extensions settings:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Activating Add to MusicBox in the Extensions settings" src="SCR-20220912-ecy.png">
+                                </figure>
+                                
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-music-with-drag-and-drop">With Drag and Drop</p>
+                                <p>MusicBox supports adding items by dragging and dropping their URL into the app. When you find a URL to an album or song, click and hold it to start dragging, and drop it in the MusicBox window, inside the list of albums to add. The window's subtitle change to "Drop to add" to indicate that you can drop the URL to add the item:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Adding an album via drag and drop" src="SCR-20220912-asd.png">
+                                </figure>
+
+                                <p><strong>Note:</strong> MusicBox supports adding album/songs URLs, so you must drag and drop URLs for this feature to work. The native Music app does not support dragging an URL from albums/songs, so you must use a different method to add, like using the Share Menu, or copying and pasting the URL.</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-music-with-shortcuts">With Shortcuts</p>
+                                <p>You can automate adding items to MusicBox by creating a custom shortcut in the Shortcuts app. MusicBox offers the <strong>Add Music</strong> action, which accepts an album/song URL as input:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Shortcut to add the current song to MusicBox" src="SCR-20220912-eml.png">
+                                </figure>
+
+                                <p>For additional details about Shortcuts, see <a class="underlined" href="#shortcuts">Shortcuts</a>.</p>
+                                
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-music-from-playlist">From an Apple Music Playlist</p>
+                                <p>MusicBox supports importing items from public Apple Music playlists. To import, go to the <strong>File → Import From Playlist</strong> menu item, and paste the playlist URL into the Playlist URL text field:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Import From Playlist window" src="SCR-20220912-epl.png">
+                                </figure>
+                                
+                                <!-- TAGS -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="tags">Tags</p>
+                                <p>Apply tags to categorize your music and make it easier to find.</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="tags-creating">Creating a New Tag</p>
+                                <p>Go to the <strong>File → New Tag</strong> menu or use the <strong>⌘T</strong> keyboard shortcut to open the New Tag window:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="New Tag window" src="SCR-20220912-gpb.png">
+                                </figure>
+                                
+                                <p>Type the name of the tag, choose a color, and click Save to create it.</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="tags-editing-deleting">Editing or Deleting a Tag</p>
+                                <p>To edit the name and color of a tag, control-click it on the sidebar and choose Edit:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Edit tag from the sidebar" src="SCR-20220912-aaa.png">
+                                </figure>
+                                
+                                <p>You can also go to <strong>MusicBox → Preferences...</strong> to see a list of your tags and access the edit button:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Edit tag from Preferences" src="SCR-20220912-abc.png">
+                                </figure>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="tags-auto-tagging">Auto-Tagging</p>
+                                <p>Use Auto-Tagging to automatically tag albums and songs when adding, based on rules you set. You can create multiple Auto-Tagging rules, and each one can have numerous conditions. Auto-Tagging works when adding albums and songs from anywhere, including Shortcuts and the Share Menu.</p>
+
+                                <p style="padding-top: 1em;">To create a new Auto-Tagging rule, go to <strong>File → Auto-Tagging...</strong> and click the <strong>New...</strong> button to open the New Auto-Tagging Rule window:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="New Auto-Tagging Rule window" src="SCR-20220912-h5t.png">
+                                </figure>
+
+                                <p>Click the **Select Tag** button to choose which tag will be applied. Next, tap the <strong>Add Condition...</strong> button to create a new condition for this tag to be applied, based on the music attribute you choose.</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Add Condition window" src="SCR-20220912-h7d.png">
+                                </figure>
+
+                                <p>Choose which attribute MusicBox will evaluate. The options are Title, Artist, Music Type, Track Count, Genre, Record Label, and Source. The possible values change depending on which attribute is selected. MusicBox expects one condition for each comparison. So, for example, if you want to compare two different values for the Title attribute, you should create two different conditions, one for each value. MusicBox will ignore text cases and diacritic marks when comparing text.</p>
+
+                                <p style="padding-top: 1em;">You can choose whether all conditions must match for the Auto-Tagging rule to be applied or if just one of them matching would be enough in the New Auto-Tagging Rule window.</p>
+
+                                <p style="padding-top: 1em;">Control-click an Auto-Tagging rule to reveal options to apply it to the existing items in your library, and to edit, duplicate, or remove it:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Auto-Tagging management options" src="SCR-20220912-h8d.png">
+                                </figure>
+                                
+                                <!-- SEARCH -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="search">Search</p>
+                                <p>MusicBox searches by multiple attributes, making it easy to find the album or song you are looking for. Use the search box in the top-right of the toolbar to search by Title, Artist, Genre, Record Label, Type, Notes, and Tags:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Search box" src="SCR-20220912-h9d.png">
+                                </figure>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="search-smart-search">Smart Search</p>
+                                <p>Create a Smart Search to automatically collect albums and songs based on a set of rules. MusicBox shows Smart Searches in the sidebar, below the Tags section.</p>
+
+                                <p style="padding-top: 1em;">Go to <strong>File → Smart Search...</strong> to create a new Smart Search:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Smart Search window" src="SCR-20220912-j6a.png">
+                                </figure>
+
+                                <p>Start by typing the Smart Search name, which will be shown in the list of Smart Searches on the sidebar. Smart Search filters albums and songs by combining all the conditions you define. You can filter by specific attributes and choose which tags the albums and songs should have. You can also configure how the results will be sorted:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="New Smart Search window" src="SCR-20220912-j8a.png">
+                                </figure>
+
+                                <p style="padding-top: 1em;">Control-click a Smart Search to reveal options to edit, duplicate, or remove it:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Smart Search management options" src="SCR-20220912-j8b.png">
+                                </figure>
+
+                                <!-- SHORTCUTS -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="shortcuts">Shortcuts</p>
+                                <p>Create custom shortcuts and automate your workflow using actions and data from MusicBox. Open the Shortcuts app, create a new shortcut, and search for MusicBox to see all available action:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Shortcuts window" src="SCR-20220912-jch.png">
+                                </figure>
+
+                                <p>Access the <a class="underlined" href="https://support.apple.com/en-gb/guide/shortcuts-mac/welcome/mac">Shortcuts User Guide</a> to learn more about Shortcuts.</p>
+                                
+                                <!-- WIDGETS -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="widgets">Widgets</p>
+                                <p>MusicBox comes with widgets for the Notification Center, providing easy access to your albums and songs. To add widgets, click the date and time in the menu bar or swipe left with two fingers from the right edge of the trackpad. Scroll down until you see the Edit Widgets button and click on it. Choose between the small, medium, or large size, and click + to add it:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Adding widgets to the Notification Center" src="SCR-20220912-jci.png">
+                                </figure>
+
+                                <p>You can also control-click the widget to customize it:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Customizing the widget" src="SCR-20220912-jcj.png">
+                                </figure>
+
+                                <!-- CONTACT -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="contact">Contact</p>
+                                <p>Any questions about MusicBox? Please get in touch with me at <a class="underlined" href="mailto:marcosatanaka@gmail.com">marcosatanaka@gmail.com</a>.</p>
+			                </div> <!-- <div class="column is-6 is-offset-0"> -->
+                        </div> <!-- <div class="columns"> -->
+                    </section> <!-- <section class="section"> -->
+                </div> <!-- <div class="column is-12"> -->
+            </div> <!-- <div class="columns"> -->
+        </div> <!-- <div class="hero-body"> -->
+    </section> <!-- <section class="hero" style="padding-top: 0px;"> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a class="button is-medium is-outlined download" aria-label="Go to my LinkedIn profile" title="LinkedIn" href="https://www.linkedin.com/in/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my GitHub profile" title="GitHub" href="https://github.com/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my Twitter profile" title="Twitter" href="https://twitter.com/mactanaka">
+                <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
