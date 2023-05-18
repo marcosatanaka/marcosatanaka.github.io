@@ -50,6 +50,7 @@
                                             <li><a class="underlined" href="#adding-videos-with-drag-and-drop">With Drag and Drop</a></li>
                                             <li><a class="underlined" href="#adding-videos-with-shortcuts">With Shortcuts</a></li>
                                             <li><a class="underlined" href="#adding-videos-from-playlist">From a Playlist</a></li>
+                                            <li><a class="underlined" href="#adding-videos-watch-later">YouTube's Watch Later</a></li>
                                             <li><a class="underlined" href="#adding-videos-channels">Channels</a></li>
                                         </ol>
                                         <li><a class="underlined" href="#tags">Tags</a></li>
@@ -64,6 +65,7 @@
                                         </ol>
                                         <li><a class="underlined" href="#shortcuts">Shortcuts</a></li>
                                         <li><a class="underlined" href="#widgets">Widgets</a></li>
+                                        <li><a class="underlined" href="#url-schemes">URL Schemes</a></li>
                                         <li><a class="underlined" href="#contact">Contact</a></li>
                                     </ol>
                                 </div>
@@ -73,7 +75,9 @@
                                 <!-- ADDING VIDEOS -->
                                 
                                 <p class="title is-3" id="adding-videos">Adding Videos</p>
-                                <p>Play supports videos from <strong>YouTube, Netflix, Disney+, Apple TV, Letterboxd, Twitter, Apple Music, Apple Developer, LinkedIn Learning, Rumble, Khan Academy, Vimeo, BBC, O’Reilly Learning, TED, Nebula, and Odysee.</strong> You can add videos in several different ways:</p>
+                                <p>Play fetches metadata and saves videos from <strong>YouTube, Netflix, Disney+, Apple TV, Hulu, Letterboxd, Twitter, Apple Music, Apple Developer, Twitch, LinkedIn Learning, Rumble, Khan Academy, Vimeo, BBC, O’Reilly Learning, TED, Nebula, and Odysee.</strong></p>
+
+                                <p style="padding-top: 1em;">You can also add videos from other platforms by manually filling in all the required fields. Here are the details about all the methods available:</p>
                                 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-url">With URL</p>
                                 <p>Click the <strong>Add Video button (+)</strong> in the toolbar to open the Add Video window. You can also acces it from the <strong>File → Add Video</strong> menu, or also with the <strong>⌘N</strong> keyboard shortcut:</p>
@@ -126,6 +130,13 @@
 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-channels">Channels</p>
                                 <p>Play was designed to store videos to watch later, so it doesn't support adding new videos from a channel automatically. But this feature can be built with the help of shortcuts, using some of Play's actions. <a class="underlined" href="play-help-channels.html">Follow this link to learn more about it</a>.</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-videos-watch-later">YouTube's Watch Later</p>
+                                <p>Integrating YouTube's watch later playlist into the app would be a fantastic addition. Unfortunately, since September 12, 2016, Google <a class="underlined" href="https://developers.google.com/youtube/v3/revision_history#august-11,-2016">no longer allows third-party applications to access it</a>. That's why Play manages its own queue.</p>
+
+                                <br>
+
+                                <p>However, there is an alternative solution available. You can convert your watch later playlist into a regular playlist on YouTube, and then import that playlist into Play. Please follow <a class="underlined" href="https://webapps.stackexchange.com/a/155256">this step-by-step guide</a> to help you with the process.</p>
                                 
                                 <!-- TAGS -->
                                 
@@ -235,10 +246,21 @@
                                     <img alt="Customizing the widget" src="SCR-20220912-la3.png">
                                 </figure>
 
+                                <!-- URL SCHEMES -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="url-schemes">URL Schemes</p>
+                                <p></p>
+
+                                <ul>
+                                    <li><strong>Add Video:</strong> <code>play://add?url=&lt;videoURL&gt;</code></li>
+                                    <li><strong>Open Video:</strong> <code>play://open?id=&lt;videoID&gt;</code></li>
+                                    <li><strong>Open Random New Video:</strong> <code>play://open-random-new</code></li>
+                                </ul>
+
                                 <!-- CONTACT -->
                                 
                                 <p class="title is-3" style="padding-top: 2em;" id="contact">Contact</p>
-                                <p>Any questions about Play? Please get in touch with me at <a class="underlined" href="mailto:marcosatanaka@gmail.com">marcosatanaka@gmail.com</a>.</p>
+                                <p>If you have any questions about Play, I'd be happy to help. Feel free to reach out to me at <a class="underlined" href="mailto:marcosatanaka@gmail.com">marcosatanaka@gmail.com</a> and I'll get back to you as soon as possible.</p>
 			                </div> <!-- <div class="column is-6 is-offset-0"> -->
                         </div> <!-- <div class="columns"> -->
                     </section> <!-- <section class="section"> -->
