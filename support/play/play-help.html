@@ -51,7 +51,11 @@
                                             <li><a class="underlined" href="#adding-videos-with-shortcuts">With Shortcuts</a></li>
                                             <li><a class="underlined" href="#adding-videos-from-playlist">From a Playlist</a></li>
                                             <li><a class="underlined" href="#adding-videos-watch-later">YouTube's Watch Later</a></li>
-                                            <li><a class="underlined" href="#adding-videos-channels">Channels</a></li>
+                                        </ol>
+                                        <li><a class="underlined" href="#channels">Channels</a></li>
+                                        <ol>
+                                            <li><a class="underlined" href="#channels-following">Following Channels</a></li>
+                                            <li><a class="underlined" href="#channels-triaging-videos">Triaging Videos</a></li>
                                         </ol>
                                         <li><a class="underlined" href="#tags">Tags</a></li>
                                         <ol>
@@ -97,10 +101,16 @@
                                     <img alt="Add to Play in the Share Menu" src="SCR-20220912-kx9.png">
                                 </figure>
 
-                                <p>If the Add to Play button is not visible, click More... and activate it in the Extensions settings:</p>
+                                <p>If the Add to Play button is not visible, open <strong>System Settings → Privacy & Security → Added extensions</strong> and make sure it is enabled:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Activating Add to Play in the Extensions settings" src="SCR-20220912-kz6.png">
+                                </figure>
+
+                                <p>Also check <strong>System Settings → Privacy & Security → Sharing</strong>:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="Activating Add to Play in the Extensions settings" src="SCR-20220912-kz73324.png">
                                 </figure>
                                 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-drag-and-drop">With Drag and Drop</p>
@@ -111,6 +121,10 @@
                                 </figure>
 
                                 <p><strong>Note:</strong> Play supports adding video URLs, so you must drag and drop URLs for this feature to work.</p>
+
+                                <br>
+
+                                <p><strong>Note #2:</strong> A Safari issue when dragging an URL from the proxy icon is currently preventing this feature to work. Applications should assign a URL type for this dragged data, but Safari doesn't do that. It only works when we drag a URL from the page itself, like a video from the list of suggested videos, for example. I have feedback FB12101531 opened with Apple about this issue.</p>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-shortcuts">With Shortcuts</p>
                                 <p>You can automate adding items to Play by creating a custom shortcut in the Shortcuts app. Play offers the <strong>Add Video</strong> action, which accepts a video URL as input:</p>
@@ -128,15 +142,60 @@
                                     <img alt="Import From Playlist window" src="SCR-20220912-l2t.png">
                                 </figure>
 
-                                <p class="title is-5" style="padding-top: 2em;" id="adding-videos-channels">Channels</p>
-                                <p>Play was designed to store videos to watch later, so it doesn't support adding new videos from a channel automatically. But this feature can be built with the help of shortcuts, using some of Play's actions. <a class="underlined" href="play-help-channels.html">Follow this link to learn more about it</a>.</p>
-
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-watch-later">YouTube's Watch Later</p>
+                                
                                 <p>Integrating YouTube's watch later playlist into the app would be a fantastic addition. Unfortunately, since September 12, 2016, Google <a class="underlined" href="https://developers.google.com/youtube/v3/revision_history#august-11,-2016">no longer allows third-party applications to access it</a>. That's why Play manages its own queue.</p>
 
                                 <br>
 
                                 <p>However, there is an alternative solution available. You can convert your watch later playlist into a regular playlist on YouTube, and then import that playlist into Play. Please follow <a class="underlined" href="https://webapps.stackexchange.com/a/155256">this step-by-step guide</a> to help you with the process.</p>
+                                
+                                <!-- CHANNELS -->
+                                
+                                <p class="title is-3" style="padding-top: 2em;" id="channels">Channels</p>
+                                <p>Follow YouTube channels and get new videos as they're released. Easily save videos you want to watch and delete the rest. Your YouTube subscriptions free from algorithms and ads!</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="channels-following">Following Channels</p>
+
+                                <p>Click <strong>Channels</strong> in the bottom-left toolbar, or go to <strong>File → Channels...</strong> to open your Inbox window. Then, click the <strong>+</strong> button to add a channel:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D41.png">
+                                </figure>
+
+                                <p>Play accepts YouTube channel URLs in the <strong>youtube.com/@user</strong> format. You can also follow a channel by sharing a link with the Share Menu and choosing <strong>Add to Play</strong>.</p>
+
+                                <br>
+
+                                <p>Additionally, you have the option to manually follow a channel in instances where Play is unable to retrieve the channel ID directly from the URL. Select <strong>Add Manually</strong> and fill in all the required fields.</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D42.png">
+                                </figure>
+
+                                <p>You'll need to get the channel ID in order to add it to Play. This can be accomplished through various methods, one of the most convenient being using a websites designed specifically to retrieve these IDs for you, such as <a class="underlined" href="https://commentpicker.com/youtube-channel-id.php">this one</a>.</p>
+
+                                <p class="title is-5" style="padding-top: 2em;" id="channels-triaging-videos">Triaging Videos</p>
+
+                                <p>New videos from channels you follow will be shown in the <strong>Inbox</strong> view, accessible from the <strong>Channels</strong> button in the bottom-left toolbar. You can use the sidebar to switch between all new videos, new videos released today, and videos from a specific channel.</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D43.png">
+                                </figure>
+
+                                <p>You can select one or more videos and click the <strong>Save for Later</strong> button in the toolbar to add. You can also control-click them to reveal a context menu with more options.</p>
+
+                                <br>
+
+                                <p>To delete videos you're not interested in, simply select them and press the <strong>Delete</strong> key on your keyboard. You can also click the delete button in the toolbar.</p>
+
+                                <br>
+
+                                <p>You can also add or delete all new videos from a specific channel. Just control-click a channel and choose the desired action:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D44.png">
+                                </figure>
                                 
                                 <!-- TAGS -->
                                 
@@ -234,13 +293,13 @@
                                 <!-- WIDGETS -->
                                 
                                 <p class="title is-3" style="padding-top: 2em;" id="widgets">Widgets</p>
-                                <p>Play comes with widgets for the Notification Center, providing easy access to your videos. To add widgets, click the date and time in the menu bar or swipe left with two fingers from the right edge of the trackpad. Scroll down until you see the Edit Widgets button and click on it. Choose between the small, medium, or large size, and click + to add it:</p>
+                                <p>Play comes with interactive widgets for the Notification Center and Desktop, providing easy access to your videos. To add widgets, click the date and time in the menu bar or swipe left with two fingers from the right edge of the trackpad. Scroll down until you see the Edit Widgets button and click on it. Choose between the small, medium, large, or extra-large sizes, and click + to add it:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Adding widgets to the Notification Center" src="SCR-20220912-la2.png">
                                 </figure>
 
-                                <p>You can also control-click the widget to customize it:</p>
+                                <p>You can control-click the widget to customize it:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Customizing the widget" src="SCR-20220912-la3.png">
