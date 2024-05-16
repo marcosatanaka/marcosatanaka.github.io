@@ -50,12 +50,13 @@
                                             <li><a class="underlined" href="#adding-videos-with-drag-and-drop">With Drag and Drop</a></li>
                                             <li><a class="underlined" href="#adding-videos-with-shortcuts">With Shortcuts</a></li>
                                             <li><a class="underlined" href="#adding-videos-from-playlist">From a Playlist</a></li>
-                                            <li><a class="underlined" href="#adding-videos-watch-later">YouTube's Watch Later</a></li>
+                                            <li><a class="underlined" href="#adding-videos-watch-later">YouTube’s Watch Later</a></li>
                                         </ol>
-                                        <li><a class="underlined" href="#channels">Channels</a></li>
+                                        <li><a class="underlined" href="#channels">Channels Inbox</a></li>
                                         <ol>
-                                            <li><a class="underlined" href="#channels-following">Following Channels</a></li>
                                             <li><a class="underlined" href="#channels-importing">Importing From YouTube</a></li>
+                                            <li><a class="underlined" href="#channels-following">Following Manually</a></li>
+                                            <li><a class="underlined" href="#channels-filtering-new-videos">Filtering New Videos</a></li>
                                             <li><a class="underlined" href="#channels-triaging-videos">Triaging Videos</a></li>
                                         </ol>
                                         <li><a class="underlined" href="#watching">Watching</a></li>
@@ -78,6 +79,7 @@
                                         <li><a class="underlined" href="#widgets">Widgets</a></li>
                                         <li><a class="underlined" href="#url-schemes">URL Schemes</a></li>
                                         <li><a class="underlined" href="#icloud">iCloud</a></li>
+                                        <li><a class="underlined" href="#faq">FAQ</a></li>
                                         <li><a class="underlined" href="#contact">Contact</a></li>
                                     </ol>
                                 </div>
@@ -90,7 +92,7 @@
                                 <p>Play fetches metadata and saves videos from a wide range of platforms. You can also add videos from other platforms by manually filling in all the required fields. Here are the details about all the methods available:</p>
                                 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-url">With URL</p>
-                                <p>Click the <strong>Add Video button (+)</strong> in the toolbar to open the Add Video window. You can also acces it from the <strong>File → Add Video</strong> menu, or also with the <strong>⌘N</strong> keyboard shortcut:</p>
+                                <p>Click the <strong>Add Video button (+)</strong> in the toolbar to open the Add Video sheet. You can also acces it from the <strong>File → Add Video</strong> menu, with the <strong>⌘N</strong> keyboard shortcut, or from the Menu Bar button:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Add Video window" src="SCR-20220912-kx8.png">
@@ -98,7 +100,7 @@
 
                                 <p>You can paste multiple video URLs in the URLs text field, separating each one with a new line. Write notes in the Notes field to add them to all items. You can also choose multiple tags to add to the videos using the Add Tag button.</p>
 
-                                <p style="padding-top: 1em;">Once everything's ready, click the <strong>Import</strong> button to import the items.</p>
+                                <p style="padding-top: 1em;">Once everything’s ready, click the <strong>Import</strong> button to import the items.</p>
                                 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-from-other-apps">From Other Apps</p>
                                 <p>You can add videos using Play directly from the Share Menu. On an app that supports sharing, click the <strong>Share</strong> button and choose <strong>Add to Play</strong>:</p>
@@ -120,7 +122,7 @@
                                 </figure>
                                 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-drag-and-drop">With Drag and Drop</p>
-                                <p>Play supports adding videos by dragging and dropping their URL into the app. When you find a URL to a video, click and hold it to start dragging, and drop it in the Play window, inside the list of videos to add. The window's subtitle change to "Drop to add" to indicate that you can drop the URL to add the item:</p>
+                                <p>Play supports adding videos by dragging and dropping their URL into the app. When you find a URL to a video, click and hold it to start dragging, and drop it in the Play window, inside an empty spot in the list of videos. The window’s subtitle change to “Drop to add” to indicate that you can drop the URL to add the item:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Adding a video via drag and drop" src="SCR-20220912-kz7.png">
@@ -130,7 +132,7 @@
 
                                 <br>
 
-                                <p><strong>Note #2:</strong> A Safari issue when dragging an URL from the proxy icon is currently preventing this feature to work. Applications should assign a URL type for this dragged data, but Safari doesn't do that. It only works when we drag a URL from the page itself, like a video from the list of suggested videos, for example. I have feedback FB12101531 opened with Apple about this issue.</p>
+                                <p><strong>Note #2:</strong> A Safari issue when dragging an URL from the proxy icon is currently preventing this feature to work. Applications should assign a URL type for this dragged data, but Safari doesn’t do that. It only works when we drag a URL from the page itself, like a video from the list of suggested videos, for example. I’ve raised feedback FB12101531 with Apple regarding this issue.</p>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="adding-videos-with-shortcuts">With Shortcuts</p>
                                 <p>You can automate adding items to Play by creating a custom shortcut in the Shortcuts app. Play offers the <strong>Add Video</strong> action, which accepts a video URL as input:</p>
@@ -148,50 +150,70 @@
                                     <img alt="Import From Playlist window" src="SCR-20220912-l2t.png">
                                 </figure>
 
-                                <p class="title is-5" style="padding-top: 2em;" id="adding-videos-watch-later">YouTube's Watch Later</p>
+                                <p class="title is-5" style="padding-top: 2em;" id="adding-videos-watch-later">YouTube’s Watch Later</p>
                                 
-                                <p>Integrating YouTube's watch later playlist into the app would be a fantastic addition. Unfortunately, since September 12, 2016, Google <a class="underlined" href="https://developers.google.com/youtube/v3/revision_history#august-11,-2016">no longer allows third-party applications to access it</a>. That's why Play manages its own queue.</p>
+                                <p>Integrating YouTube’s watch later playlist into the app would be a fantastic addition. Unfortunately, since September 12, 2016, Google <a class="underlined" href="https://developers.google.com/youtube/v3/revision_history#august-11,-2016">no longer allows third-party applications to access it</a>. That’s why Play manages its own queue.</p>
 
                                 <br>
 
                                 <p>However, there is an alternative solution available. You can convert your watch later playlist into a regular playlist on YouTube, and then import that playlist into Play. Please follow <a class="underlined" href="https://webapps.stackexchange.com/a/155256">this step-by-step guide</a> to help you with the process.</p>
                                 
-                                <!-- CHANNELS -->
+                                <!-- CHANNELS INBOX -->
                                 
-                                <p class="title is-3" style="padding-top: 2em;" id="channels">Channels</p>
-                                <p>Follow YouTube channels and get new videos as they're released. Easily save videos you want to watch and delete the rest. Your YouTube subscriptions free from algorithms!</p>
+                                <p class="title is-3" style="padding-top: 2em;" id="channels">Channels Inbox</p>
+                                <p>Follow YouTube channels and playlists to get new videos as they’re released. Easily save videos you want to watch and delete the rest. Your YouTube subscriptions free from algorithms!</p>
 
-                                <br>
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="27F70DED-FDEE-4CDB-B1A2-0D9A0221DD44.png">
+                                </figure>
 
-                                <p><em>This feature requires Play version 2.0.0.</em></p>
+                                <p class="title is-5" style="padding-top: 2em;" id="channels-importing">Importing My YouTube Subscriptions</p>
 
-                                <p class="title is-5" style="padding-top: 2em;" id="channels-following">Following Channels</p>
+                                <p>Play supports importing the channels you’re subscribed to on YouTube via Google Takeout. <a href="play-help-google-takeout-macos.html" class="underlined">Click here</a> for a quick guide on how to export your YouTube subscriptions into a Play-compatible file format.</p>
 
-                                <p>Click <strong>Channels</strong> in the bottom-left toolbar, or go to <strong>File → Channels...</strong> to open your Inbox window. Then, click the <strong>+</strong> button to add a channel:</p>
+                                <p class="title is-5" style="padding-top: 2em;" id="channels-following">Following Manually</p>
+
+                                <p>Click <strong>Channels Inbox</strong> in the bottom-left toolbar, or go to <strong>Window → Channels Inbox</strong> to open your Channels Inbox window. Then, click the <strong>+</strong> button to add a channel or playlist:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D41.png">
                                 </figure>
 
-                                <p>Play accepts YouTube channel URLs in the <strong>youtube.com/@user</strong> format. You can also follow a channel by sharing a link with the Share Menu and choosing <strong>Add to Play</strong>.</p>
+                                <p>Play accepts YouTube channel URLs in the <strong>youtube.com/@user</strong> format and playlist URLs in the <strong>youtube.com/playlist?list=ID</strong> format. You can also follow a channel by sharing a link with the Share Menu and choosing <strong>Add to Play</strong>.</p>
 
                                 <br>
 
-                                <p>Additionally, you have the option to manually follow a channel in instances where Play is unable to retrieve the channel ID directly from the URL. Select <strong>Add Manually</strong> and fill in all the required fields.</p>
+                                <p>Additionally, you have the option to follow a channel by manually filling in the required fields, in instances where Play is unable to retrieve the channel ID directly from the URL. Select <strong>Manually</strong> and fill in all the required fields:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D42.png">
                                 </figure>
 
-                                <p>You'll need to get the channel ID in order to add it to Play. This can be accomplished through various methods, one of the most convenient being using a websites designed specifically to retrieve these IDs for you, such as <a class="underlined" href="https://commentpicker.com/youtube-channel-id.php">this one</a>.</p>
+                                <p>You’ll need to get the channel ID in order to add it to Play. This can be accomplished through various methods, one of the most convenient being using a websites designed specifically to retrieve these IDs for you, such as <a class="underlined" href="https://commentpicker.com/youtube-channel-id.php">this one</a>.</p>
 
-                                <p class="title is-5" style="padding-top: 2em;" id="channels-importing">Importing From YouTube</p>
+                                <p class="title is-5" style="padding-top: 2em;" id="channels-filtering-new-videos">Filtering New Videos</p>
 
-                                <p>Play supports importing the channels you subscribe to on YouTube through Google Takeout. <a href="play-help-google-takeout-macos.html" class="underlined">Click here</a> for a quick guide on how to export your YouTube subscriptions into a Play-compatible file format.</p>
+                                <p>With Channels Inbox you can automatically filter out shorts and videos with a specific keyword. It supports two types of filters: <strong>General Filters</strong> and <strong>Channel-Specific Filters</strong>.</p>
+
+                                <br>
+
+                                <p><strong>General Filters</strong> apply to new videos from all channels you follow. They allow you to hide shorts and filter by title and description. You can access them in <strong>Preferences → Channels</strong>:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D45.png">
+                                </figure>
+
+                                <br>
+
+                                <p><strong>Channel-Specific Filters</strong> can be set up on a channel-basis, to filter new videos from a specific channel. They allow you to filter by title and description. You can access them by control-clicking a channel, and selecting <strong>Edit</strong>:</p>
+
+                                <figure class="image" style="padding: 1em 0;">
+                                    <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D46.png">
+                                </figure>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="channels-triaging-videos">Triaging Videos</p>
 
-                                <p>New videos from channels you follow will be shown in the <strong>Inbox</strong> view, accessible from the <strong>Channels</strong> button in the bottom-left toolbar. You can use the sidebar to switch between all new videos, new videos released today, and videos from a specific channel.</p>
+                                <p>New videos from channels you follow will be shown in the <strong>Channels Inbox</strong> view, accessible from the <strong>Channels Inbox</strong> button in the bottom-left toolbar. You can use the sidebar to switch between all new videos, new videos released today, and videos from a specific channel.</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="" src="9A0A3E4B-B36D-4FD8-900A-52DD8D9E0D43.png">
@@ -201,7 +223,7 @@
 
                                 <br>
 
-                                <p>To delete videos you're not interested in, simply select them and press the <strong>Delete</strong> key on your keyboard. You can also click the delete button in the toolbar.</p>
+                                <p>To delete videos you’re not interested in, simply select them and press the <strong>Delete</strong> key on your keyboard. You can also click the delete button in the toolbar.</p>
 
                                 <br>
 
@@ -214,7 +236,7 @@
                                 <!-- WATCHING -->
                                 
                                 <p class="title is-3" style="padding-top: 2em;" id="watching">Watching</p>
-                                <p>You can watch YouTube videos either within the app or directly on YouTube's website. Play also supports redirecting YouTube videos to alternative platforms like Invidious and Piped. You can also select your preferred browser in Preferences.</p>
+                                <p>You can watch YouTube videos either within the app or directly on YouTube’s website. Play also supports redirecting YouTube videos to alternative platforms like Invidious and Piped. You can also select your preferred browser in Preferences.</p>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="watching-in-app">In-App</p>
                                 <p>To watch supported YouTube videos in-app, make sure the <strong>Play YouTube Videos Inline</strong> parameter is enabled in Preferences. Then, select a video, wait for the player to load, and click the play button.</p>
@@ -237,7 +259,7 @@
                                 <p>You can go to Preferences to configure watching YouTube videos on alternative platforms like Invidious and Piped and to choose your preferred browser.</p>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="watching-playlist">Playlist</p>
-                                <p>To watch multiple YouTube videos in sequence, use the <strong>Play All New on YouTube</strong> button. It is available when Control-clicking any Tag, Smart Search, or Channel in the sidebar. It is also available in the File menu for playing all new videos from the 'New' section.</p>
+                                <p>To watch multiple YouTube videos in sequence, use the <strong>Play All New on YouTube</strong> button. It is available when Control-clicking any Tag, Smart Search, or Channel in the sidebar. It is also available in the File menu for playing all new videos from the “New” section.</p>
 
                                 <br>
 
@@ -245,7 +267,7 @@
 
                                 <br>
 
-                                <p>YouTube doesn't allow saving temporary playlists for later, but there's a workaround that enables you to accomplish this. Here's what the whole process looks like:</p>
+                                <p>YouTube doesn’t allow saving temporary playlists for later, but there’s a workaround that enables you to accomplish this. Here’s what the whole process looks like:</p>
 
                                 <div class="content">
                                     <ol>
@@ -265,10 +287,10 @@
                                 <p>Apply tags to categorize your videos and make them easier to find.</p>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="tags-creating">Creating a New Tag</p>
-                                <p>Go to the <strong>File → New Tag</strong> menu or use the <strong>⌘T</strong> keyboard shortcut to open the New Tag window:</p>
+                                <p>Go to the <strong>File → New Tag</strong> menu or use the <strong>⌘T</strong> keyboard shortcut to open the New Tag sheet:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
-                                    <img alt="New Tag window" src="SCR-20220912-gpb.png">
+                                    <img alt="New Tag sheet" src="SCR-20220912-gpb.png">
                                 </figure>
                                 
                                 <p>Type the name of the tag, choose a color, and click Save to create it.</p>
@@ -280,25 +302,25 @@
                                     <img alt="Edit tag from the sidebar" src="SCR-20220912-l3t.png">
                                 </figure>
                                 
-                                <p>You can also go to <strong>Play → Preferences...</strong> to see a list of your tags and access the edit button:</p>
+                                <p>You can also go to <strong>Organize → Tags...</strong> to see a list of your tags and access the edit button:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
-                                    <img alt="Edit tag from Preferences" src="SCR-20220912-l4p.png">
+                                    <img alt="" src="SCR-20220912-l4p.png">
                                 </figure>
 
                                 <p class="title is-5" style="padding-top: 2em;" id="tags-auto-tagging">Auto-Tagging</p>
                                 <p>Use Auto-Tagging to automatically tag videos when adding, based on rules you set. You can create multiple Auto-Tagging rules, and each one can have numerous conditions. Auto-Tagging works when adding videos from anywhere, including Shortcuts and the Share Menu.</p>
 
-                                <p style="padding-top: 1em;">To create a new Auto-Tagging rule, go to <strong>File → Auto-Tagging...</strong> and click the <strong>New...</strong> button to open the New Auto-Tagging Rule window:</p>
+                                <p style="padding-top: 1em;">To create a new Auto-Tagging rule, go to <strong>Organize → Auto-Tagging...</strong> and click the <strong>New...</strong> button to open the New Auto-Tagging Rule sheet:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
-                                    <img alt="New Auto-Tagging Rule window" src="SCR-20220912-l57.png">
+                                    <img alt="New Auto-Tagging Rule sheet" src="SCR-20220912-l57.png">
                                 </figure>
 
-                                <p>Click the <strong>Select Tag</strong> button to choose which tag will be applied. Next, tap the <strong>Add Condition...</strong> button to create a new condition for this tag to be applied, based on the video attribute you choose.</p>
+                                <p>Click the <strong>Select Tag</strong> menu to choose which tag will be applied. Next, tap the <strong>Add Condition...</strong> button to create a new condition for this tag to be applied, based on the video attribute you choose.</p>
 
                                 <figure class="image" style="padding: 1em 0;">
-                                    <img alt="Add Condition window" src="SCR-20220912-l5o.png">
+                                    <img alt="Add Condition sheet" src="SCR-20220912-l5o.png">
                                 </figure>
 
                                 <p>Choose which attribute Play will evaluate. The options are Title, Channel, and Duration. The possible values change depending on which attribute is selected. Play expects one condition for each comparison. So, for example, if you want to compare two different values for the Title attribute, you should create two different conditions, one for each value. Play will ignore text cases and diacritic marks when comparing text.</p>
@@ -323,7 +345,7 @@
                                 <p class="title is-5" style="padding-top: 2em;" id="search-smart-search">Smart Search</p>
                                 <p>Create a Smart Search to automatically collect videos based on a set of rules. Play shows Smart Searches in the sidebar, below the Tags section.</p>
 
-                                <p style="padding-top: 1em;">Go to <strong>File → Smart Search...</strong> to create a new Smart Search:</p>
+                                <p style="padding-top: 1em;">Go to <strong>Organize → Smart Search...</strong> to create a new Smart Search:</p>
 
                                 <figure class="image" style="padding: 1em 0;">
                                     <img alt="Smart Search window" src="SCR-20220912-l7y.png">
@@ -376,12 +398,13 @@
                                     <li><strong>Add Video:</strong> <code>play://add?url=&lt;videoURL&gt;</code></li>
                                     <li><strong>Open Video:</strong> <code>play://open?id=&lt;videoID&gt;</code></li>
                                     <li><strong>Open Random New Video:</strong> <code>play://open-random-new</code></li>
+                                    <li><strong>Open Channels Inbox:</strong> <code>play://channels</code></li>
                                 </ul>
 
                                 <!-- ICLOUD -->
                                 
                                 <p class="title is-3" style="padding-top: 2em;" id="icloud">iCloud</p>
-                                <p>Play uses iCloud to keep your videos up to date and available across all your devices. If you're having problems such as videos not syncing or devices being out of sync, please try the following:</p>
+                                <p>Play uses iCloud to keep your videos up to date and available across all your devices. If you’re having problems such as videos not syncing or devices being out of sync, please try the following:</p>
 
                                 <div class="content">
                                     <ul>
@@ -391,27 +414,37 @@
                                         <li>Make sure you are signed into the same iCloud account on all devices.</li>
                                         <li>Make sure iCloud Drive is turned on. Go to the System Preferences → Apple ID → iCloud. Make sure the iCloud Drive option is enabled.</li>
                                         <li>Make sure Play is enabled in iCloud Drive. Go to the System Preferences → Apple ID → iCloud → iCloud Drive Options. Scroll down, find Play, and make sure it is enabled.</li>
-                                        <li>Reset Play's iCloud Drive permissions. Go to the System Preferences → Apple ID → iCloud → iCloud Drive Options. Scroll down, find Play, disable and enable it.</li>
+                                        <li>Reset Play’s iCloud Drive permissions. Go to the System Preferences → Apple ID → iCloud → iCloud Drive Options. Scroll down, find Play, disable and enable it.</li>
                                         <li>Update Play to the latest version on all your devices. Go to the App Store → Updates and check if Play is updated.</li>
                                         <li>Make sure you have the latest macOS version on all your devices. Go to the System Preferences → Software Update.</li>
                                         <li>Try reinstalling Play. Go to the Launchpad → click and hold Play → Delete (X) → Delete. Then, go to the App Store, search and install Play.</li>
                                     </ul>
                                 </div>
 
-                                <p>If you have checked these settings on all your devices and iCloud Sync still isn't working, please check Apple's <a href="https://www.apple.com/support/icloud/systemstatus/">System Status</a> page to see if iCloud Backup or iCloud Drive are having any issues.</p>
+                                <p>If you have checked these settings on all your devices and iCloud Sync still isn’t working, please check Apple’s <a href="https://www.apple.com/support/icloud/systemstatus/">System Status</a> page to see if iCloud Backup or iCloud Drive are having any issues.</p>
 
                                 <!-- <br> -->
 
-                                <!-- <p>There is an additional troubleshooting measure which involves reseting Play's database to a clean state. 99.9% of the problems should be fixed by following the previous steps, so only consider this action as a last resort. And note that there is a risk of data loss by doing this procedure.</p> -->
+                                <!-- <p>There is an additional troubleshooting measure which involves reseting Play’s database to a clean state. 99.9% of the problems should be fixed by following the previous steps, so only consider this action as a last resort. And note that there is a risk of data loss by doing this procedure.</p> -->
 
                                 <!-- <br> -->
 
                                 <!-- <p>To reset the database to a clean state, go to Play → iCloud Status and type the Command+Shift+O keyboard shortcut. It reveals the location on disk where the database is located. You should quit Play, then delete these three files: Play.sqlite, Play.sqlite-shm, and Play.sqlite-wal. After deleting the files, reopen Play and wait for the iCloud data to sync.</p> -->
 
+                                <!-- FAQ -->
+
+                                <p class="title is-3" style="padding-top: 2em;" id="faq">FAQ</p>
+
+                                <p><strong>How do I export my list of videos?</strong></p>
+                                <br>
+                                <p>You can use the <strong>Get Videos</strong> action in Shortcuts to access and export your list of videos. Here is an example of a <a class="underlined" href="https://www.icloud.com/shortcuts/d656a98d412646b7bca4f01d2f1ee9a4">shortcut that exports all video URLs to a text file</a>.</p>    
+
+                                
+
                                 <!-- CONTACT -->
                                 
                                 <p class="title is-3" style="padding-top: 2em;" id="contact">Contact</p>
-                                <p>If you have any questions about Play, I'd be happy to help. Feel free to reach out to me at <a class="underlined" href="mailto:marcosatanaka@gmail.com">marcosatanaka@gmail.com</a> and I'll get back to you as soon as possible.</p>
+                                <p>If you have any questions about Play, I’d be happy to help. Feel free to reach out to me at <a class="underlined" href="mailto:marcosatanaka@gmail.com">marcosatanaka@gmail.com</a> and I’ll get back to you as soon as possible.</p>
 			                </div> <!-- <div class="column is-6 is-offset-0"> -->
                         </div> <!-- <div class="columns"> -->
                     </section> <!-- <section class="section"> -->
