@@ -66,3 +66,28 @@ ul#horizontal li {
   padding-left: 1em !important;;
   padding-right: 1em !important;;
 }
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.1s ease-in-out;
+}
+.carousel-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.carousel-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.carousel-index {
+  margin: 0 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
