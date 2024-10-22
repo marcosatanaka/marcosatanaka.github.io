@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Play Premium Renewals</title>
+    <meta name="Description" content="Marcos Tanaka is a software developer working on apps for Apple's platforms. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bulma.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body>
+
+    <section class="section" style="background-color: #383838;">
+        <div class="container">
+            <!-- Top nav bar -->
+            <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                    <h1 class="title">
+                        <div class="has-text-weight-semibold is-inline has-text-white">Marcos Tanaka</div>
+                        <div class="has-text-weight-light title is-4 has-text-white" style="margin-top: 8px;">Apple Developer</div>
+                    </h1>
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                    <p class="level-item"><a style="color: #fff !important;" href="../index.html">My Apps</a></p>
+                    <!-- <p class="level-item"><a style="color: #fff !important;" href="../more.html">Previous Works</a></p> -->
+                    <p class="level-item"><strong style="color: #fff !important;">Blog</strong></p>
+                    <p class="level-item"><a href="../about.html" style="color: #fff !important;">About</a></p>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container" style="padding-bottom: 60px;">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2" style="padding-top: 24px;">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Play Premium Renewals</p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">@mactanaka</span>
+                                    <span class="tag is-rounded">October 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p style="margin-top: 1.5em;">The first year of annual renewals is probably one of the most anticipated and daunting milestones for a subscription-based app, especially when it’s something we’ve never experienced with other apps before. Maintaining existing users is <a class="underlined" href="https://www.david-smith.org/blog/2023/01/12/churn/">just as important</a>, if not more so, than acquiring new ones, so providing ongoing value and communicating it is crucial for the app to succeed.</p>
+
+                            <p style="margin-top: 1.5em;">I released Play Premium <a class="underlined" href="press-kit/play/whats-new-2.0.html">almost a year ago</a>, so the first-year renewal is coming up soon. Inspired by Casey Liss and Callsheet, which <a class="underlined" href="https://www.caseyliss.com/2024/7/13/callsheet-renewals-approach">went through this a few months ago</a>, I created this post to summarize how Play has evolved over the past year, highlighting all the new features and improvements, including:</p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>27 updates each for iOS and macOS, totaling 54 releases</li>
+                                    <li>An average of one update per week</li>
+                                    <li>Over 100 new features, improvements, and bug fixes</li>
+                                    <li>Day-one <a class="underlined" href="press-kit/play/whats-new-ios-18.html">support for iOS and iPadOS 18</a></li>
+                                    <li>Day-one support for Apple Vision Pro and visionOS</li>
+                                </ul>
+                            </div>
+
+                            <p>Your support is what makes all of this possible, and I hope you’re enjoying Play Premium so far. It helps me keep improving the app and rolling out new features and updates regularly, ensuring users always get a better and well-maintained app. I have exciting plans for the upcoming year, and I’d love to have you along for the journey! ❤️</p>
+
+                            <p style="margin-top: 1.5em;">Here’s the complete changelog for the iOS app over the past year:</p>
+
+                            <!-- CHANGELOG -->
+
+                            <p class="title is-4" style="margin-top: 1.5em;" id="2.3.6">Version 2.3.6</p>
+                            <p><em>Released October 22, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Support for playback speeds faster than 2x. To configure, go to <em>Settings → Video Player</em>.</li>
+                                    <li>Better chapter extraction from video descriptions with some specific formats.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>New button for moving a channel to a folder from within the context menu.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Ability to unfollow a channel without exiting the search results in Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Temporarily remove support for widget accented mode due to a system issue that stops links from opening their associated items.</li>
+                                    <li>Editing an Auto-Tagging condition and changing the <em>'When'</em> attribute no longer unnecessarily clears the <em>'Contains'</em> field.</li>
+                                    <li>Fixed an issue that caused videos marked as watched through Shortcuts to not update the <em>Date Watched</em> attribute correctly.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="margin-top: 1.5em;" id="2.3.5">Version 2.3.5</p>
+                            <p><em>Released September 26, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li><strong>Channels Inbox</strong><span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <ul>
+                                        <li>You can now customize the double-tap gesture between “Save for Later”, “Watch on YouTube”, or “Watch in App”. To configure, go to <em>Settings → Channels Inbox → Gestures</em>.</li>
+                                        <li>Related settings are now conveniently accessible in <em>Settings → Channels Inbox</em>.</li>
+                                        <li>Chapters and Recommendations are now displayed when previewing new videos that were not saved for later.</li>
+                                        <li>When importing from Google Takeout, you now have the option to overwrite existing channels. This will remove any channels you follow in Play that are not included in your Google Takeout archive.</li>
+                                        <li>Included the ability to add a channel to a folder right when following it.</li>
+                                    </ul>
+
+                                    <li><strong>Video Details</strong></li>
+                                    <ul>
+                                        <li>The video player now shows a warning when the creator disabled watching outside YouTube.</li>
+                                        <li>Added a dedicated button to open the video in its source app. To configure, go to <em>Settings → Video Details → Actions</em>.</li>
+                                        <li>Added the ability to edit video description.</li>
+                                        <li>Fixed an issue where video notes could briefly duplicate while typing.</li>
+                                    </ul>
+
+                                    <li><strong>Auto-Tagging</strong></li>
+                                    <ul>
+                                        <li>Saving an Auto-Tagging will now automatically apply it to existing videos.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.3.4">Version 2.3.4</p>
+                            <p><em>Released September 24, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li>Support for tinted widgets.</li>
+                                    <li>Fix a bug that could cause some recommended videos to miss metadata during addition.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.3.1">Version 2.3.1</p>
+                            <p><em>Released September 19, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li>Chapters and Timestamps: Play will detect and extract chapters listed in the video description, enabling you to easily navigate to specific sections.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Recommended By: Likewise, videos suggested by the creator in the description are now shown in a dedicated section, making it easier to add them to your queue.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The video player now stays visible while scrolling through the description and other video attributes.</li>
+                                    <li>Improvements in playback position syncing.</li>
+                                    <li>Stability was greatly improved on the iPad.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.3.0">Version 2.3.0</p>
+                            <p><em>Released September 16, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li>Play 2.3.0 adds support for the latest features introduced in iOS and iPadOS 18. It offers controls for Control Center, includes new app icons that match your Home Screen style, and deeply integrates with Spotlight. It also brings new forms of interaction via App Shortcuts that allows you to add and retrieve data using Siri, Spotlight, the Shortcuts app, and more. And you can now translate video descriptions to your preferred language. <a class="underlined" href="../press-kit/play/whats-new-ios-18.html">Check out the dedicated page</a> to learn more about the new features introduced in this update.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.5">Version 2.2.5</p>
+                            <p><em>Released September 06, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li>New setting for inline video playback on iPhone. Go to Settings → Video Player → Auto Enter Fullscreen to configure.</li>
+                                    <li>New button to watch in Picture in Picture (PiP) mode. By default, PiP automatically starts when you swipe away a fullscreen video, but you can now also activate it from the player’s toolbar (Player Settings → Enter PiP).</li>
+                                    <li>iPad now uses the native system player when watching in fullscreen.</li>
+                                    <li>iPad now takes advantage of all available space to display video details and the inline player.</li>
+                                    <li>iPad now properly supports Picture in Picture (PiP) mode.</li>
+                                    <li>The player now saves your playback position when exiting the detail view as well as when pausing the video.</li>
+                                    <li>The modal video details screen (available only when “Tap to Watch” is enabled in Settings → Video List) now uses the app’s tint color.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.4">Version 2.2.4</p>
+                            <p><em>Released September 02, 2024</em></p>
+                            
+                            <div class="content">
+                                <ul>
+                                    <li>Built-in Player: The video player now features a new toolbar to control playback, skip back and forward, adjust speed, and more.</li>
+                                    <li>In Progress: A new playlist for videos you’ve started but haven’t finished.</li>
+                                    <li>Playback Speed: You can now change the playback speed for all videos in <em>Settings → Video Player</em>.</li>
+                                    <li>Fixed an issue where videos from channels with similar names were displayed under both channels in the <em>“New by Creator”</em> section.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.3">Version 2.2.3</p>
+                            <p><em>Released July 19, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>New option to show video descriptions in <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Moved the <em>Edit</em> button to the top bar in <em>Channels Inbox</em> for easier access.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Added a “New Folder” button to the <em>Channels Inbox</em> menu for quick access.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The video description is now directly below the artwork and title for better visibility.</li>
+                                    <li>Added a quick view option for notes when tapping and holding a video.</li>
+                                    <li>The <em>Show Full Title</em> preference configured in <em>Settings → Video Details → Metadata</em> is now separate from the one in the video list.</li>
+                                    <li>Play now suggests channels as you type when setting an Auto-Tagging condition by channel.</li>
+                                    <li>New URL scheme for viewing video details: <code>play://view?id=<videoID></code></li>
+                                    <li>Improved iconography to clarify certain actions.</li>
+                                    <li>Added “Open Details” as a swipe option in lists.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.2">Version 2.2.2</p>
+                            <p><em>Released June 28, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Fixed an issue that could group videos from channels with similar names in the <em>New by Channel</em> section.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.1">Version 2.2.1</p>
+                            <p><em>Released June 5, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Pinned Tags and Smart Searches now sync across platforms, and there’s no limit to the number of items you can pin.</li>
+                                    <li>You can now follow a channel by searching its name, without needing to copy and paste the URL (though that’s still an option if you want to follow a specific channel directly).<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Redesigned <em>My Channels</em> view to highlight the different options for following channels and playlists.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.2.0">Version 2.2.0</p>
+                            <p><em>Released May 31, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>New option to hide titles in grid view, for a cleaner look.</li>
+                                    <li>The notes text editor now features live markdown syntax highlighting and improved controls.</li>
+                                    <li>New option in <em>Settings → Video Details → Metadata</em> to always show the full video description.</li>
+                                    <li>Search now offers <em>title, channel, notes, description, and tag</em> as categories for more granular control.</li>
+                                    <li><em>Manage Videos</em> now offers more filters and lets you play all selected videos on YouTube.</li>
+                                    <li>Deleting items is now safer and less likely to be done accidentally.</li>
+                                    <li>New button to edit a video’s channel by touching and holding it in <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>You can now choose a tag when saving multiple videos in <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Revamped UI when adding items from the share sheet.</li>
+                                    <li>Added links to some examples of shortcuts you can create using Play’s actions in the <em>Help</em> section.</li>
+                                    <li>Improved Play’s initial launch experience.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.9">Version 2.1.9</p>
+                            <p><em>Released May 21, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>New optional layout for Channels Inbox that groups new videos by channel and provides categories such as <em>All</em>, <em>Today</em>, and <em>Slow Feeds</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>You can now organize your Channels Inbox subscriptions into folders.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Channels Inbox now supports per-channel settings to filter new videos according to their title and description.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Added the ability to edit the channel name in Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Performance improvements when refreshing Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>New button in the video’s context menu to quickly filter by that creator.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.8">Version 2.1.8</p>
+                            <p><em>Released May 1, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Over 2x faster performance when finding new videos from channels you follow in <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Fixed an issue where the <em>Delete Videos Above</em> would be disabled after saving a video for later using the double tap or swipe gesture.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.7">Version 2.1.7</p>
+                            <p><em>Released Apr 22, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Fixed an issue where the app could crash when launched by users with numerous tags and tag folders.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.6">Version 2.1.6</p>
+                            <p><em>Released Apr 20, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>You can now customize the sorting order of your <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Added the ability to share the video directly from <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>New button for adding a tag to a video saved for later when swiping in <em>Channels Inbox</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Tag and Smart Search folders can now be edited and deleted from the sidebar.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Tag folders now display the item count.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The video list now indicates which videos have a star rating or notes.</li>
+                                    <li>Included buttons to help with Markdown formatting while editing a note.</li>
+                                    <li>The <em>Find Video</em> shortcut action now supports filtering by URL.</li>
+                                    <li>Resolved a problem where the <em>Manage Tags</em> screen would unexpectedly close while modifying video tags.</li>
+                                    <li>Resolved a problem where the <em>New by Creator</em> section would lost the selected item when changing the count of videos to watch.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.5">Version 2.1.5</p>
+                            <p><em>Released Apr 1, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>The list of supported streaming services has been significantly expanded. If Play couldn’t fetch metadata for a video you tried to add before, there’s a good chance it can now handle it.</li>
+                                    <li>Play now also supports a wide range of content types, including articles, posts, and so on. This opens up various possibilities, such as saving links to movie reviews, Instagram Reels, social network posts with an embedded video, and so on.</li>
+                                    <li>New context menu action available in <em>Channels Inbox</em> to <em>Delete Videos Above</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.4">Version 2.1.4</p>
+                            <p><em>Released Mar 27, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>The video player now dynamically expands to fit the available space, ideal for a more immersive experience on iPad.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.3">Version 2.1.3</p>
+                            <p><em>Released Mar 20, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>You can now choose between <em>Thumbnail</em> and <em>Color & Icon</em> for the Tag, Smart Search, and Creator sections on the Start Screen. Go to Settings → Start Screen to configure.</li>
+                                    <li>Improved the UI for managing Tag and Smart Search folders in Settings.</li>
+                                    <li>Settings now shows a live preview of the selected layout.</li>
+                                    <li>Improved animations throughout the app.</li>
+                                    <li>Fixed an issue that could cause the <em>Watched</em> list to not be sorted in reverse chronological order.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.2">Version 2.1.2</p>
+                            <p><em>Released Mar 12, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Shared videos now include the Start At attribute in the URL.</li>
+                                    <li>Added a shortcut action to recover recently removed videos from your Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Fixed an issue when trying to add items from Disney+.</li>
+                                    <li>Fixed an issue that could cause performance issues when importing channels from Google Takeout.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.1.1">Version 2.1.1</p>
+                            <p><em>Released Mar 4, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Import your YouTube channels using Google Takeout.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Select and manipulate multiple videos at once in the Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The Start Screen now shows thumbnails for each Tag, Smart Search, and Creator.</li>
+                                    <li>You can now view the number of videos on each Smart Search.</li>
+                                    <li>Watch a random new item when pressing and holding a Tag or Smart Search.</li>
+                                    <li>Fixed an issue where Smart Searches, when filtering by durations shorter than a specified amount, failed to save the selected comparison condition.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.9">Version 2.0.9</p>
+                            <p><em>Released Feb 10, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Follow YouTube playlists: you can now follow a specific playlist to get new videos as they are published.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Pin up to two Tags or Smart Searches at the top of the start screen for quick access.</li>
+                                    <li>Smart Search now supports filtering by video duration, description, and URL.</li>
+                                    <li>Smart Search now supports filtering videos that do not include a specific tag.</li>
+                                    <li>Smart Search now supports customizing the criteria between <em>Contains</em> and <em>Doesn’t Contains</em> when filtering by video title, channel, description, URL, or notes.</li>
+                                    <li>Drag and drop a tag into a video to assign while in grid view.</li>
+                                    <li>New <em>Watch in App</em> button when pressing and holding a video throughout the app.</li>
+                                    <li>The <em>Actions</em> section now shows a button to quickly access <em>Manage Videos</em>.</li>
+                                    <li>New <em>Set Start At Position</em> shortcut to save the current playback position for the video that’s currently playing, or for a specific video by ID.</li>
+                                    <li>Fix: dragging a video to a tag no longer changes its added time and status.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.7">Version 2.0.7</p>
+                            <p><em>Released Jan 27, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Customize swipe gestures in the <em>Channels Inbox</em> list. Go to <em>Channels → More → Swipe Actions...</em> to customize.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Tags now show their associated folder names across the app.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Quickly create or update an Auto-Tagging rule for a specific channel. Press and hold a tag in the <em>Manage Tags</em> view to use.</li>
+                                    <li>Support for watching videos in the DuckDuckGo browser. Configure in <em>Settings → General → Watch With</em>.</li>
+                                    <li>Fixed an issue that caused the iPad app to don’t play videos in fullscreen when Stage Manager was active.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.5">Version 2.0.5</p>
+                            <p><em>Released Jan 09, 2024</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Added the ability to watch new videos from your channels inline, without having to first save them for later.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The <em>Get Videos</em> shortcut action now supports filtering by multiple tags.</li>
+                                    <li>List and Dense List layouts can now show the complete video title. Configure in <em>Settings → Video List</em>.</li>
+                                    <li>Fixed a crash when trying to set the <em>Start At</em> attribute on videos that have a 0:00 length.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.4">Version 2.0.4</p>
+                            <p><em>Released Dec 12, 2023</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Interactive widget for tracking newly released videos from channels you follow.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Added an option to show the full video title in the Channels Inbox.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Added <em>Date Watched</em> as a possible attribute for filtering and sorting videos in the <em>Find Video</em> shortcut action.</li>
+                                    <li>You can now quickly follow a channel from the video details screen.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Rows in the <em>New by Channel</em> section now support the <em>Play All New on YouTube</em> action.</li>
+                                    <li>Fix: When the <em>Mark as Watched</em> parameter is enabled, selecting <em>Play All New on YouTube</em> will now accurately play the selected tag and smart search.</li>
+                                    <li>Fix: The Channels Inbox status bar now converts the elapsed time into hours if it has been more than 60 minutes since the last update.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.3">Version 2.0.3</p>
+                            <p><em>Released Dec 6, 2023</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Follow channels from your existing videos in <em>Manage Channels → Import From URL → Add Existing Channels</em>.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>You can now merge two different Tags. Go to <em>Settings → Tags</em>, touch and hold one and select <em>Merge...</em><span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Configure a custom Piped/Invidious instance to watch videos.</li>
+                                    <li>New action to delete YouTube channels from the Shortcuts app.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>Keep up with all the latest updates with the new <em>What’s New in Play</em> document, available in <em>Settings → What’s New</em>.</li>
+                                    <li>Bug Fix: Resolved an issue where deleted videos could reappear in the Channels Inbox.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.2">Version 2.0.2</p>
+                            <p><em>Released Dec 2, 2023</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>This update improves the in-app player experience:</li>
+                                    <ul>
+                                        <li>AirPlay support.</li>
+                                        <li>Picture in Picture (PiP) support on the iPhone.</li>
+                                        <li>Fullscreen support on the iPad.</li>
+                                        <li>Touch and hold the Start At button to set it as the currently running time.</li>
+                                    </ul>
+                                    <li>It also adds the ability to create an Auto-Tag rule based on the video description.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.1">Version 2.0.1</p>
+                            <p><em>Released Nov 27, 2023</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Added double tap gesture to add a video from Inbox to watch later.<span class="tag is-info is-light tag-premium">PLAY PREMIUM</span></li>
+                                    <li>The Actions section in the start screen now features a button to open a random new video.</li>
+                                    <li>Playing all new videos now gives you the option to watch without marking them as watched when the <em>Mark as Watched</em> parameter is active.</li>
+                                    <li>Fix: Importing videos from a playlist no longer duplicates existing videos.</li>
+                                </ul>
+                            </div>
+
+                            <p class="title is-4" style="padding-top: 1em;" id="2.0.0">Version 2.0.0</p>
+                            <p><em>Released Nov 27, 2023</em></p>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Play 2.0 brings the ability to follow YouTube channels and get new videos as they’re released. You can save the ones you want to watch, and delete the rest. It integrates harmoniously with the existing feature set, allowing you to have a complete YouTube experience within the app - get new videos, save, organize, and watch without algorithms!</li>
+                                    <li>It also adds the ability to create folders for Tags and Smart Searches, giving you more ways to catalog and organize your videos.</li>
+                                </ul>
+                            </div>
+
+                            <p style="margin-top: 1.5em;">My thanks once again to everyone who supported and made this possible. Here’s to year two and beyond!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+            </div>
+
+        </section>
+            <!-- END ARTICLE FEED -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a rel="me" class="button is-medium is-outlined download" aria-label="Go to my Mastodon profile" title="Mastodon" href="https://mastodon.social/@mactanaka">
+                <span class="icon">
+                    <i class="fab fa-mastodon"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my LinkedIn profile" title="LinkedIn" href="https://www.linkedin.com/in/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my GitHub profile" title="GitHub" href="https://github.com/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
