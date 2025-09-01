@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>What’s New in Play for iOS, iPadOS, and macOS 26</title>
+    <meta name="Description" content="What’s New in Play for iOS, iPadOS, and macOS 26">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bulma.min.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../press.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body>
+
+    <section class="section" style="background-color: #383838;">
+        <div class="container">
+            <!-- Top nav bar -->
+            <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                    <h1 class="title">
+                        <div class="has-text-weight-semibold is-inline has-text-white">Marcos Tanaka</div>
+                        <div class="has-text-weight-light title is-4 has-text-white" style="margin-top: 8px;">Apple Developer</div>
+                    </h1>
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                    <p class="level-item"><a href="../../index.html" style="color: #fff !important;">My Apps</a></p>
+                    <p class="level-item"><a href="../../blog/blog.html" style="color: #fff !important;">Blog</a></p>
+                    <p class="level-item"><a href="../../about.html" style="color: #fff !important;">About</a></p>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="hero" style="padding-top: 0px;">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-12">
+                    <section class="section">
+                        <div class="columns">
+                            <div class="column is-2">
+                                <a href="https://apps.apple.com/us/app/id1596506190">
+                                    <div class="card-image has-text-centered">
+                                            <figure class="image is-128x128 is-inline-block zoom">
+                                                <img alt="Download Play on the App Store" src="icon_512x512_os26.png">
+                                            </figure>
+                                        </div>
+                                </a>
+
+                                <div class="content">
+                                    <ol>
+                                        <li><a class="underlined" href="#fresh-design">Fresh Design</a></li>
+                                        <li><a class="underlined" href="#updated-app-icons">Updated App Icons</a></li>
+                                        <li><a class="underlined" href="#video-summaries">Video Summaries</a></li>
+                                        <li><a class="underlined" href="#tag-and-icon-suggestions">Tag and Icon Suggestions</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="column is-6 is-offset-1">
+                                <p class="title is-2" style="padding-bottom: 0.3em;">What’s New in Play for iOS, iPadOS, and macOS 26</p>
+                                
+                                <p>This is one of those updates that brings big changes both under the hood and in the parts you actually see and use. Behind the scenes, I’ve made changes to navigation components, which should make the app more robust and reliable. And on the surface, Play now features a modernized UI that adopts the new design language in every view and platform.</p>
+
+                                <p style="padding-top: 1.25em;">In addition to its refreshed look, this update also includes a few smart features powered by Apple Intelligence. These features lend a hand with everyday tasks, making them a little faster and easier to accomplish. And for the first time, Play can now summarize YouTube videos! This is a feature I’ve wanted to build for a long time but only now became possible thanks to the local AI models provided by Apple Intelligence.</p>
+
+                                <section class="section has-text-centered" style="padding: 2rem; !important">
+                                    <a href="https://apps.apple.com/us/app/id1596506190">
+                                        <img alt="Download Play on the App Store" src="../../images/app-store-white-badge.svg">
+                                    </a>
+                                </section>
+
+                                <!-- FRESH DESIGN -->
+
+                                <p class="title is-4" id="fresh-design">Fresh Design</p>
+
+                                <p>When I first started <a class="underlined" href="https://mastodon.social/@mactanaka/114700084180812755">experimenting</a> with the new design language, I struggled to find a way to bring it into Play so that it didn’t just look different than the previous version, but also functioned better. It took me a while to figure out how to apply Liquid Glass effectively, but after a few iterations, I’m happy with how it turned out.</p>
+                                
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/1.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="padding-top: 1.25em;">I couldn’t resist rolling out a few pieces of the redesign early, so you may have already noticed some of them in the <a class="underlined" href="https://marcosatanaka.com/whats-new/play">latest updates</a> available on the App Store. Changes involving Liquid Glass and the new design language will obviously only ship alongside iOS 26.</p>
+                                
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/2.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p style="padding-top: 1.25em;">One of my favorite things about the new design language is how it creates a deeper separation between content and navigation by elevating toolbar and navigation bar buttons. I think they now look more like actual buttons compared to the old glyph-only design. The redesign also feels more playful, with buttons that animate and shift shape as you move between different views. In this update, I’m also taking advantage of <em>newish</em> navigation transitions, like the zoom effect that plays when opening a video’s detail view, or the smooth morphing animation when a modal sheet expands from its source button into a full-size sheet. A great example is the new unified Add Video sheet.</p>
+                                
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/3.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="padding-top: 1.25em;">iOS 26 introduces the ability to add subtitles to views, so I took this opportunity to move the custom-built status bar from the bottom to the top. It feels much more natural up there, right next to the view’s title. In turn, the search bar has shifted from the top to the bottom, making it easier to reach and more in line with the rest of the system.</p>
+                                
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/4.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="padding-top: 1.25em;">One thing I wanted to do but didn’t have time for (did I mention this update touched basically every view and the entire navigation structure of the app? 😆), was to switch to a tab bar design and centralize all search into a dedicated Search button right there. I think this makes much more sense than keeping search inside specific lists, and it should greatly improve the experience of finding both local and online content, like videos you added or channels you’d like to follow. My plan is to start working on this after the release of the iOS 26 update.</p>
+
+                                <p style="padding-top: 1.25em;">I’ve also redesigned modal sheets throughout the app so they only take up the space they actually need, making them less likely to get in the way of other content you’re viewing. For example, the video description now appears in a half-height sheet, so it doesn’t cover the video that might be playing at the top.</p>
+                                
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/5.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="padding-top: 1.25em;">Another example is the Add Video sheet, which now shows only the most common controls at first, and lets you quickly paste a video URL from the clipboard. It also animates and morphs directly from the button itself, which I think looks super cool. I’ve also made some settings accessible directly from the view they affect—like customizing which sections are visible on the start view by tapping the Edit button, or changing the layout of the list of videos.</p>
+
+                                <!-- UPDATED APP ICONS -->
+                                
+                                <p class="title is-4" style="padding-top: 1.25em;" id="updated-app-icons">Updated App Icons</p>
+
+                                <p>Of course, this update also adds support for all icon styles: default, dark, tinted, and clear. The redesigned icon now has much more depth than before, and I really like the way light catches on the corners of the play boxes.</p>
+
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/6.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- VIDEO SUMMARIES -->
+                                
+                                <p class="title is-4" style="padding-top: 1.25em;" id="video-summaries">Video Summaries</p>
+
+                                <p>This is a feature users have been requesting ever since the rise of LLM tools, but it’s actually been hard to implement without local models due to cost. Videos come in all lengths, and processing arbitraty videos can consume many tokens and quickly get quite expensive. Luckily, with Apple Intelligence, tasks run locally on-device, which finally allowed me to implement this feature. I find it especially useful for deciding what to watch next or for quickly grasping the main idea of a long video.</p>
+
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/7.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tag and Icon Suggestions -->
+                                
+                                <p class="title is-4" style="padding-top: 1.25em;" id="tag-and-icon-suggestions">Tag and Icon Suggestions</p>
+
+                                <p>I think these are the areas where AI can lend a helping hand in completing our tasks without getting in the way. With tag suggestions, Play can proactively suggest three tags that suit your video, offering a mix of tags you already use and new ones you might want to create. This makes it easier for new users to start tagging their videos and gives existing users ideas for additional tags they may want to apply.</p>
+
+                                <div class="column is-full" style="margin-top: 1em;">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-2388by1668">
+                                                <img src="whats-new-ios-26/8.png" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="padding-top: 1.25em;">A similar situation happens with <a class="underlined" href="https://mastodon.social/@mactanaka/115051473017906862">icon suggestions</a>. In Play, we can configure custom icons for tags, smart searches, and folders, and now AI can suggest a fitting icon based on the item’s name. It’s a small touch, but it can save lots of time when we don’t need to manually hunt for the perfect icon.</p>
+
+                                <hr>
+                                
+                                <p>I’m thrilled with how Play has embraced Liquid Glass, and I have plenty of ideas for future structural changes that will further enhance the user experience and usability. Another exciting area is Apple’s Intelligence features. They’re still in the early stages, but I’m eager to integrate them more deeply throughout the app, helping with small tasks and unlocking new capabilities that weren’t possible before.</p>
+
+                                <div class="notification has-text-centered" style="margin-top: 2em;">
+                                    For an in-depth overview of Play, check out the <a href="play-press-kit.html">complete Press Kit</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a rel="me" class="button is-medium is-outlined download" aria-label="Go to my Mastodon profile" title="Mastodon" href="https://mastodon.social/@mactanaka">
+                <span class="icon">
+                    <i class="fab fa-mastodon"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my LinkedIn profile" title="LinkedIn" href="https://www.linkedin.com/in/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </a>
+            <a class="button is-medium is-outlined download" aria-label="Go to my GitHub profile" title="GitHub" href="https://github.com/marcosatanaka">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
