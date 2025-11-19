@@ -3,7 +3,7 @@ p {
 }
 
 a {
-	color: #4a4a4a;
+  color: #4a4a4a;
 }
 
 a:hover {
@@ -11,26 +11,27 @@ a:hover {
 }
 
 ul#horizontal li {
-  display:inline;
+  display: inline;
   margin-right: 10px;
 }
 
 .project-tags {
-	font-size: 70%;
+  font-size: 70%;
 }
 
 .article-item {
-	margin-top: 26px;
-	margin-bottom: 10px;
+  margin-top: 26px;
+  margin-bottom: 10px;
 }
 
 .underlined {
-	text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .hero {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .hero-body {
@@ -48,7 +49,7 @@ ul#horizontal li {
 }
 
 .highlight-color {
-  color: rgb(49,168,246) !important;
+  color: rgb(49, 168, 246) !important;
 }
 
 .card {
@@ -63,8 +64,8 @@ ul#horizontal li {
   font-size: 0.5em !important;
   font-weight: bold !important;
   margin-left: 1.2em !important;
-  padding-left: 1em !important;;
-  padding-right: 1em !important;;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 
 .carousel-image {
@@ -72,12 +73,14 @@ ul#horizontal li {
   height: auto;
   transition: opacity 0.1s ease-in-out;
 }
+
 .carousel-arrows {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
+
 .carousel-arrow {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -86,6 +89,7 @@ ul#horizontal li {
   cursor: pointer;
   margin: 0 5px;
 }
+
 .carousel-index {
   margin: 0 10px;
   font-family: "Courier New", Courier, monospace;
