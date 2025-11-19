@@ -3,14 +3,55 @@
 
 <head>
     <title>Marcos Tanaka | About</title>
-    <meta name="Description" content="Marcos Tanaka is a software developer working on apps for Apple's platforms. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.">
+    <meta name="description" content="Marcos Tanaka is a software developer working on apps for Apple's platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.">
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://marcosatanaka.com/about.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Marcos Tanaka | About">
+    <meta property="og:description" content="Marcos Tanaka is a software developer working on apps for Apple's platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.">
+    <meta property="og:image" content="https://marcosatanaka.com/images/me.png">
+    <meta property="og:url" content="https://marcosatanaka.com/about.html">
+    <meta property="og:type" content="profile">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marcos Tanaka | About">
+    <meta name="twitter:description" content="Marcos Tanaka is a software developer working on apps for Apple's platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.">
+    <meta name="twitter:image" content="https://marcosatanaka.com/images/me.png">
+    <meta name="twitter:creator" content="@mactanaka">
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marcos Tanaka",
+      "url": "https://marcosatanaka.com",
+      "image": "https://marcosatanaka.com/images/me.png",
+      "sameAs": [
+        "https://mastodon.social/@mactanaka",
+        "https://linkedin.com/in/marcosatanaka",
+        "https://github.com/marcosatanaka"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Loop Apps"
+      },
+      "description": "Marcos Tanaka is a software developer working on apps for Apple's platforms."
+    }
+    </script>
+
     <link rel="stylesheet" href="bulma.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="press.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </head>
+
 <body>
 
     <section class="section">
@@ -41,6 +82,10 @@
             <div class="columns">
                 <div class="column is-offset-3 is-6">
                     <section class="section has-text-centered">
+                        <figure class="image is-128x128" style="margin: 0 auto 1.5rem auto;">
+                            <img class="is-rounded" alt="Marcos Tanaka" src="images/me.png">
+                        </figure>
+
                         <p>Hi, I’m Marcos, an indie software developer working on apps for Apple’s platforms since 2018. You can find out more about my apps by looking at <a href="index.html" class="underlined">my portfolio</a>.</p>
 
                         <br>
@@ -78,4 +123,5 @@
     </footer>
 
 </body>
+
 </html>
