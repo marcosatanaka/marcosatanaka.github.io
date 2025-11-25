@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Apps - Marcos Tanaka</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .app-image {
+            transition: transform 0.2s ease;
+        }
+
+        .app-card {
+            padding: 1rem;
+            text-align: center;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.2s;
+            pointer-events: none;
+        }
+
+        .app-card:hover::after {
+            background: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered is-2 mb-6">My Apps</h1>
+
+            <div class="columns is-multiline is-centered is-gapless">
+                <!-- MusicHarbor -->
+                <div class="column is-half">
+                    <div class="app-card" style="background-color: #ffffff;">
+                        <a href="index.html#musicharbor">
+                            <figure class="image">
+                                <img class="app-image" src="images/apps/music-harbor.PNG" alt="MusicHarbor">
+                            </figure>
+                            <div class="media mt-4">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="press-kit/musicharbor/icon_512x512.png" alt="MusicHarbor Icon"
+                                            style="border-radius: 14px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content has-text-left">
+                                    <h2 class="title is-4">MusicHarbor</h2>
+                                    <p class="subtitle is-6 mt-1">Stay on top of new music releases, music videos, news,
+                                        and concerts.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MusicSmart -->
+                <div class="column is-half">
+                    <div class="app-card" style="background-color: rgba(146, 10, 176, 0.95);">
+                        <a href="index.html#musicsmart">
+                            <figure class="image">
+                                <img class="app-image" src="images/apps/music-smart.PNG" alt="MusicSmart">
+                            </figure>
+                            <div class="media mt-4">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="press-kit/musicsmart/icon_512x512.png" alt="MusicSmart Icon"
+                                            style="border-radius: 14px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content has-text-left">
+                                    <h2 class="title is-4 has-text-white">MusicSmart</h2>
+                                    <p class="subtitle is-6 mt-1 has-text-white">Liner notes and credits for albums,
+                                        songs, and artists.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Play -->
+                <div class="column is-half">
+                    <div class="app-card" style="background-color: #FFCECB;">
+                        <a href="index.html#play">
+                            <figure class="image">
+                                <img class="app-image" src="images/apps/play.png" alt="Play">
+                            </figure>
+                            <div class="media mt-4">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="press-kit/play/icon_512x512.png" alt="Play Icon"
+                                            style="border-radius: 14px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content has-text-left">
+                                    <h2 class="title is-4">Play</h2>
+                                    <p class="subtitle is-6 mt-1">Bookmark and organize videos to watch later.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MusicBox -->
+                <div class="column is-half">
+                    <div class="app-card" style="background-color: #D5D6F2;">
+                        <a href="index.html#musicbox">
+                            <figure class="image">
+                                <img class="app-image" src="images/apps/musicbox.png" alt="MusicBox">
+                            </figure>
+                            <div class="media mt-4">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="press-kit/musicbox/icon_512x512.png" alt="MusicBox Icon"
+                                            style="border-radius: 14px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content has-text-left">
+                                    <h2 class="title is-4">MusicBox</h2>
+                                    <p class="subtitle is-6 mt-1">Catalog, organize, and rediscover your music library.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
