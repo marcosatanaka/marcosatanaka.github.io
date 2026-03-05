@@ -10,21 +10,40 @@
 </head>
 <body>
 
-    <section class="section">
-        <div class="container">
-            <!-- Top nav bar -->
-            <nav class="level">
-                <!-- Left side -->
-                <div class="level-left">
-                    <h1 class="title">
-                        MusicBox Terms of Use
-                    </h1>
-                </div>
-            </nav>
+    <nav id="global-nav">
+        <div class="gn-content">
+            <a href="../index.html" class="gn-title"><span class="gn-title-name">Marcos Tanaka</span> <span class="gn-title-sep">&bull;</span> <span class="gn-title-role">Apple Developer</span></a>
+            <div class="gn-right">
+                <a href="../index.html#musicharbor" class="gn-link">MusicHarbor</a>
+                <a href="../index.html#musicsmart" class="gn-link">MusicSmart</a>
+                <a href="../index.html#play" class="gn-link">Play</a>
+                <a href="../index.html#musicbox" class="gn-link">MusicBox</a>
+                <a href="../blog/blog.html" class="gn-link">Blog</a>
+                <a href="../about.html" class="gn-link">About</a>
+            </div>
+            <button class="gn-hamburger" aria-label="Menu" onclick="document.getElementById('global-nav').classList.toggle('gn-open')">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <path class="gn-hamburger-top" d="M2 4.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <path class="gn-hamburger-bottom" d="M2 13.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+            </button>
         </div>
+        <div class="gn-dropdown">
+            <a href="../index.html#musicharbor" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicHarbor</a>
+            <a href="../index.html#musicsmart" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicSmart</a>
+            <a href="../index.html#play" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">Play</a>
+            <a href="../index.html#musicbox" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicBox</a>
+            <div class="gn-drop-divider"></div>
+            <a href="../blog/blog.html" class="gn-drop-link">Blog</a>
+            <a href="../about.html" class="gn-drop-link">About</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <p class="title is-2 has-text-centered">MusicBox Terms of Use</p>
     </section>
 
-    <section class="hero is-primary" style="background-color: #383838;">
+    <section class="hero">
         <div class="hero-body">
             <div class="columns">
                 <div class="column is-offset-2 is-8">
@@ -37,7 +56,7 @@
 
                         <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
                         
-                        <h2 style="color: #fff">Subscriptions</h2>
+                        <h2>Subscriptions</h2>
 
                         <p>If you choose to buy a MusicBox Premium subscription (the “Service”), payment will be charged to your Apple ID account at the confirmation of purchase. The Subscription automatically renews unless it is canceled at least 24 hours before the current period ends. You can manage and cancel your subscriptions by going to your account settings on the App Store after purchase.</p>
 
@@ -45,47 +64,47 @@
 
                         <p>The Developer may modify or remove features of the subscription at any time, with or without notice. This may happen as a result of changes in the data providers used by the Service, or other reasons. You agree that the Developer will bear no liability to you or any third party in such event.</p>
                         
-                        <h2 style="color: #fff">Fee Changes</h2>
+                        <h2>Fee Changes</h2>
 
                         <p>The Developer, in its sole discretion and at any time, may modify the Subscription fees in accordance with Apple’s policies. Any Subscription fee change will become effective at the end of the then-current Subscription period.</p>
 
                         <p>Your continued use of the Service after the Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.</p>
                         
-                        <h2 style="color: #fff">Refunds</h2>
+                        <h2>Refunds</h2>
 
                         <p>The Developer cannot issue refunds for purchases charged to your Apple ID. Any requests for refunds may be carried out by contacting the App Store.</p>
 
                         <p>By using MusicBox and making in-app purchases, you consent to our sharing of data regarding your usage and consumption of purchased content with Apple, as part of our efforts to resolve refund requests. This information may include details about how you have accessed and interacted with the purchased content. The purpose of sharing this data is to help Apple make an informed decision regarding refund requests. We ensure that such data sharing is done in compliance with Apple's policies and only as necessary to process your requests.</p>
                         
-                        <h2 style="color: #fff">Links to Other Websites</h2>
+                        <h2>Links to Other Websites</h2>
 
                         <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.</p>
 
                         <p>The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
                         
-                        <h2 style="color: #fff">Termination</h2>
+                        <h2>Termination</h2>
 
                         <p>We may terminate or suspend your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms and Conditions.</p>
 
                         <p>Upon termination, Your right to use the Service will cease immediately.</p>
                         
-                        <h2 style="color: #fff">Limitation Of Liability</h2>
+                        <h2>Limitation Of Liability</h2>
 
                         <p>In no event shall the Developer, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
                         
-                        <h2 style="color: #fff">Disclaimer</h2>
+                        <h2>Disclaimer</h2>
 
                         <p>Your use of the Service is at your sole risk. The Service is provided on an “AS IS” and “AS AVAILABLE” basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.</p>
 
                         <p>The Developer, its affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p>
                         
-                        <h2 style="color: #fff">Changes</h2>
+                        <h2>Changes</h2>
 
                         <p>At times it may be necessary for us to make changes to the Terms such as due to changes in the services we offer, Apple's policies and procedures, and/or applicable laws. We reserve the right to update or modify the Terms at any time without prior notice. Please review the Terms periodically.</p>
 
                         <p>The Terms were last updated on the date indicated at the top of the page. Any changes to the Terms will become effective when we post the revised Terms. As set forth above, your continued use of the Application after any changes or revisions to the Terms shall indicate your acceptance and agreement with such revised Terms.</p>
                         
-                        <h2 style="color: #fff">Contact Us</h2>
+                        <h2>Contact Us</h2>
 
                         <p>If you have questions about the policies described in this statement, please email us directly at <a href="mailto:marcosatanaka@gmail.com" rel="noopener">marcosatanaka@gmail.com</a></p>
 
@@ -98,5 +117,72 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer sitemap -->
+    <footer style="background-color: #f5f5f7; padding: 40px 0 20px;">
+        <div class="sitemap">
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicHarbor</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicharbor/id1440405750" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicharbor/musicharbor-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../terms/music-harbor.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/music-harbor.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicSmart</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicsmart/id1512195368" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicsmart/musicsmart-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../terms/music-smart.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/music-smart.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Play</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1596506190" class="sitemap-link">Download</a>
+                    <a href="../press-kit/play/play-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../whats-new/play.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="../whats-new/play-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="../terms/play.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/play.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicBox</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1614730313" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicbox/musicbox-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../whats-new/musicbox-ios.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="../whats-new/musicbox-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="../terms/musicbox.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/musicbox.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Meta</h4>
+                <div class="sitemap-links">
+                    <a href="../about.html" class="sitemap-link">About</a>
+                    <a href="../blog/blog.html" class="sitemap-link">Blog</a>
+                    <a href="https://mastodon.social/@mactanaka" rel="me" class="sitemap-link">Mastodon</a>
+                    <a href="https://www.linkedin.com/in/marcosatanaka" class="sitemap-link">LinkedIn</a>
+                    <a href="https://github.com/marcosatanaka" class="sitemap-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.querySelectorAll('.sitemap-heading').forEach(function(heading) {
+        heading.addEventListener('click', function() {
+            if (window.innerWidth > 768) return;
+            var column = this.parentElement;
+            column.classList.toggle('sitemap-open');
+        });
+    });
+    </script>
+
 </body>
 </html>

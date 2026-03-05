@@ -8,150 +8,336 @@
     <link rel="stylesheet" href="../bulma.min.css">
     <link rel="stylesheet" href="../main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <style>
+        .blog-page-wrapper {
+            background-color: #f5f5f7;
+            min-height: 100vh;
+            padding: 72px 24px 48px;
+        }
+        .blog-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            padding-top: 32px;
+        }
+        .blog-page-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 24px;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        @media (max-width: 640px) {
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+        a.blog-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: box-shadow 0.2s;
+        }
+        a.blog-card:hover {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        }
+        .blog-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+        }
+        .blog-card-body {
+            padding: 16px 20px 20px;
+        }
+        .blog-card-category {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            color: #6e6e73;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .blog-card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+        .blog-card-date {
+            font-size: 13px;
+            color: #6e6e73;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
 </head>
 <body>
 
-    <section class="section" style="background-color: #383838;">
-        <div class="container">
-            <!-- Top nav bar -->
-            <nav class="level">
-                <!-- Left side -->
-                <div class="level-left">
-                    <h1 class="title">
-                        <div class="has-text-weight-semibold is-inline has-text-white">Marcos Tanaka</div>
-                        <div class="has-text-weight-light title is-4 has-text-white" style="margin-top: 8px;">Apple Developer</div>
-                    </h1>
-                </div>
-
-                <!-- Right side -->
-                <div class="level-right">
-                    <p class="level-item"><a style="color: #fff !important;" href="../index.html">My Apps</a></p>
-                    <!-- <p class="level-item"><a style="color: #fff !important;" href="../more.html">Previous Works</a></p> -->
-                    <p class="level-item"><strong style="color: #fff !important;">Blog</strong></p>
-                    <p class="level-item"><a href="../about.html" style="color: #fff !important;">About</a></p>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-    <div class="container" style="padding-bottom: 24px;">
-        <section class="articles">
-            <div class="column is-8 is-offset-2" style="padding-top: 24px;">
-                <div class="card article">
-                    <div class="card-content">
-                        <div class="content article-body">
-                            <h3 class="title is-3">
-                                <p style="color: gray; font-size: 0.75em;">2025</p>
-                            </h3>
-
-                            <h4 class="title is-4">
-                                <a href="os-26.html">Bringing Liquid Glass and Apple Intelligence to My Apps</a>
-                                <p style="color: gray; font-size: 0.75em;">September 01, 2025</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicharbor/whats-new-5.0.html">What’s New in MusicHarbor 5.0</a>
-                                <p style="color: gray; font-size: 0.75em;">March 19, 2025</p>
-                            </h4>
-
-                            <h3 class="title is-3">
-                                <p style="color: gray; font-size: 0.75em;">2024</p>
-                            </h3>
-
-                            <h4 class="title is-4">
-                                <a href="play-premium-renewals.html">Play Premium Renewals</a>
-                                <p style="color: gray; font-size: 0.75em;">October 25, 2024</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicharbor/whats-new-ios-18.html">What’s New in MusicHarbor for iOS 18 and iPadOS 18</a>
-                                <p style="color: gray; font-size: 0.75em;">August 05, 2024</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicsmart/whats-new-ios-18.html">What’s New in MusicSmart for iOS 18, iPadOS 18, and tvOS 18</a>
-                                <p style="color: gray; font-size: 0.75em;">August 05, 2024</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/play/whats-new-ios-18.html">What’s New in Play for iOS 18 and iPadOS 18</a>
-                                <p style="color: gray; font-size: 0.75em;">August 05, 2024</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicbox/whats-new-ios-18.html">What’s New in MusicBox for iOS 18 and iPadOS 18</a>
-                                <p style="color: gray; font-size: 0.75em;">August 05, 2024</p>
-                            </h4>
-
-                            <h3 class="title is-3">
-                                <p style="color: gray; font-size: 0.75em;">2023</p>
-                            </h3>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/play/whats-new-2.0.html">What's New in Play 2.0</a>
-                                <p style="color: gray; font-size: 0.75em;">November 15, 2023</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicharbor/whats-new-ios-17.html">What's New in MusicHarbor for iOS 17, iPadOS 17, and macOS Sonoma</a>
-                                <p style="color: gray; font-size: 0.75em;">August 23, 2023</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicsmart/whats-new-ios-17.html">What's New in MusicSmart for iOS 17, iPadOS 17, and macOS Sonoma</a>
-                                <p style="color: gray; font-size: 0.75em;">August 23, 2023</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/play/whats-new-ios-17.html">What's New in Play for iOS 17, iPadOS 17, and macOS Sonoma</a>
-                                <p style="color: gray; font-size: 0.75em;">August 23, 2023</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicbox/whats-new-ios-17.html">What's New in MusicBox for iOS 17, iPadOS 17, and macOS Sonoma</a>
-                                <p style="color: gray; font-size: 0.75em;">August 23, 2023</p>
-                            </h4>
-
-                            <h4 class="title is-4">
-                                <a href="../press-kit/musicsmart/whats-new-2.0.html">What's New in MusicSmart 2.0</a>
-                                <p style="color: gray; font-size: 0.75em;">May 02, 2023</p>
-                            </h4>
-
-                            <h3 class="title is-3">
-                                <p style="color: gray; font-size: 0.75em;">2018</p>
-                            </h3>
-
-                            <h4 class="title is-4">
-                                <a href="creative-selection.html">Creative Selection, por Ken Kocienda</a>
-                                <p style="color: gray; font-size: 0.75em;">September 14, 2018</p>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+    <nav id="global-nav">
+        <div class="gn-content">
+            <a href="../index.html" class="gn-title"><span class="gn-title-name">Marcos Tanaka</span> <span class="gn-title-sep">&bull;</span> <span class="gn-title-role">Apple Developer</span></a>
+            <div class="gn-right">
+                <a href="../index.html#musicharbor" class="gn-link">MusicHarbor</a>
+                <a href="../index.html#musicsmart" class="gn-link">MusicSmart</a>
+                <a href="../index.html#play" class="gn-link">Play</a>
+                <a href="../index.html#musicbox" class="gn-link">MusicBox</a>
+                <a href="../blog/blog.html" class="gn-link" style="font-weight: 700;">Blog</a>
+                <a href="../about.html" class="gn-link">About</a>
             </div>
-        </section>
+            <button class="gn-hamburger" aria-label="Menu" onclick="document.getElementById('global-nav').classList.toggle('gn-open')">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <path class="gn-hamburger-top" d="M2 4.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <path class="gn-hamburger-bottom" d="M2 13.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="gn-dropdown">
+            <a href="../index.html#musicharbor" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicHarbor</a>
+            <a href="../index.html#musicsmart" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicSmart</a>
+            <a href="../index.html#play" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">Play</a>
+            <a href="../index.html#musicbox" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicBox</a>
+            <div class="gn-drop-divider"></div>
+            <a href="../blog/blog.html" class="gn-drop-link">Blog</a>
+            <a href="../about.html" class="gn-drop-link">About</a>
+        </div>
+    </nav>
+
+    <div class="blog-page-wrapper">
+        <div class="blog-inner">
+            <p class="blog-page-title">Blog</p>
+            <div class="blog-grid">
+
+                <a href="../press-kit/musicharbor/whats-new-ios-26.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicharbor/whats-new-ios-26/1.png" alt="" style="object-position: center -30px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicHarbor</p>
+                        <p class="blog-card-title">What's New in MusicHarbor for iOS, iPadOS, and macOS 26</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> September 01, 2025</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicsmart/whats-new-ios-26.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicsmart/whats-new-ios-26/1.png" alt="" style="object-position: center -30px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicSmart</p>
+                        <p class="blog-card-title">What's New in MusicSmart for iOS, iPadOS, and macOS 26</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> September 01, 2025</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/play/whats-new-ios-26.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/play/whats-new-ios-26/1.png" alt="" style="object-position: center -30px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Play</p>
+                        <p class="blog-card-title">What's New in Play for iOS, iPadOS, and macOS 26</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> September 01, 2025</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicbox/whats-new-ios-26.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicbox/whats-new-ios-26/1.png" alt="" style="object-position: center -30px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicBox</p>
+                        <p class="blog-card-title">What's New in MusicBox for iOS, iPadOS, and macOS 26</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> September 01, 2025</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicharbor/whats-new-5.0.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicharbor/whats-new-5.0/7BAE06B3-CC9B-4994-8C12-A604E0E8F9A5.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicHarbor</p>
+                        <p class="blog-card-title">What’s New in MusicHarbor 5.0</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> March 19, 2025</p>
+                    </div>
+                </a>
+
+                <a href="play-premium-renewals.html" class="blog-card">
+                    <img class="blog-card-img" src="app-store.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Play</p>
+                        <p class="blog-card-title">Play Premium Renewals</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> October 25, 2024</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicharbor/whats-new-ios-18.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicharbor/whats-new-ios-18/D4BF04CC1314.png" alt="" style="object-position: center -521px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicHarbor</p>
+                        <p class="blog-card-title">What’s New in MusicHarbor for iOS 18 and iPadOS 18</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 05, 2024</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicsmart/whats-new-ios-18.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicsmart/whats-new-ios-18/4D40C01FCA3F.png" alt="" style="object-position: center -45px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicSmart</p>
+                        <p class="blog-card-title">What’s New in MusicSmart for iOS 18, iPadOS 18, and tvOS 18</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 05, 2024</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/play/whats-new-ios-18.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/play/whats-new-ios-18/83DBC61DE2D6.png" alt="" style="object-position: center -464px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Play</p>
+                        <p class="blog-card-title">What’s New in Play for iOS 18 and iPadOS 18</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 05, 2024</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicbox/whats-new-ios-18.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicbox/whats-new-ios-18/C92523C41E3D.png" alt="" style="object-position: center -135px;">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicBox</p>
+                        <p class="blog-card-title">What’s New in MusicBox for iOS 18 and iPadOS 18</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 05, 2024</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/play/whats-new-2.0.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/play/whats-new-2.0/1.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Play</p>
+                        <p class="blog-card-title">What’s New in Play 2.0</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> November 15, 2023</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicharbor/whats-new-ios-17.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicharbor/whats-new-ios-17/5.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicHarbor</p>
+                        <p class="blog-card-title">What’s New in MusicHarbor for iOS 17, iPadOS 17, and macOS Sonoma</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 23, 2023</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicsmart/whats-new-ios-17.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicsmart/whats-new-ios-17/6.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicSmart</p>
+                        <p class="blog-card-title">What’s New in MusicSmart for iOS 17, iPadOS 17, and macOS Sonoma</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 23, 2023</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/play/whats-new-ios-17.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/play/whats-new-ios-17/1.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Play</p>
+                        <p class="blog-card-title">What’s New in Play for iOS 17, iPadOS 17, and macOS Sonoma</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 23, 2023</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicbox/whats-new-ios-17.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicbox/whats-new-ios-17/2.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicBox</p>
+                        <p class="blog-card-title">What’s New in MusicBox for iOS 17, iPadOS 17, and macOS Sonoma</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> August 23, 2023</p>
+                    </div>
+                </a>
+
+                <a href="../press-kit/musicsmart/whats-new-2.0.html" class="blog-card">
+                    <img class="blog-card-img" src="../press-kit/musicsmart/whats-new-2.0/1.png" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">MusicSmart</p>
+                        <p class="blog-card-title">What’s New in MusicSmart 2.0</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> May 02, 2023</p>
+                    </div>
+                </a>
+
+                <a href="creative-selection.html" class="blog-card">
+                    <img class="blog-card-img" src="https://miro.medium.com/max/1350/1*wOChrQDBSeDL-nDrHmnE5Q.jpeg" alt="">
+                    <div class="blog-card-body">
+                        <p class="blog-card-category">Blog</p>
+                        <p class="blog-card-title">Creative Selection, por Ken Kocienda</p>
+                        <p class="blog-card-date"><i class="far fa-clock"></i> September 14, 2018</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <a rel="me" class="button is-medium is-outlined download" aria-label="Go to my Mastodon profile" title="Mastodon" href="https://mastodon.social/@mactanaka">
-                <span class="icon">
-                    <i class="fab fa-mastodon"></i>
-                </span>
-            </a>
-            <a class="button is-medium is-outlined download" aria-label="Go to my LinkedIn profile" title="LinkedIn" href="https://www.linkedin.com/in/marcosatanaka">
-                <span class="icon">
-                    <i class="fab fa-linkedin"></i>
-                </span>
-            </a>
-            <a class="button is-medium is-outlined download" aria-label="Go to my GitHub profile" title="GitHub" href="https://github.com/marcosatanaka">
-                <span class="icon">
-                    <i class="fab fa-github"></i>
-                </span>
-            </a>
+    <!-- Footer sitemap -->
+    <footer style="background-color: #f5f5f7; padding: 40px 0 20px;">
+        <div class="sitemap">
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicHarbor</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicharbor/id1440405750" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicharbor/musicharbor-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../terms/music-harbor.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/music-harbor.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicSmart</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicsmart/id1512195368" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicsmart/musicsmart-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../terms/music-smart.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/music-smart.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Play</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1596506190" class="sitemap-link">Download</a>
+                    <a href="../press-kit/play/play-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../whats-new/play.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="../whats-new/play-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="../terms/play.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/play.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicBox</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1614730313" class="sitemap-link">Download</a>
+                    <a href="../press-kit/musicbox/musicbox-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="../whats-new/musicbox-ios.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="../whats-new/musicbox-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="../terms/musicbox.html" class="sitemap-link">Terms of Use</a>
+                    <a href="../privacy/musicbox.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Meta</h4>
+                <div class="sitemap-links">
+                    <a href="../about.html" class="sitemap-link">About</a>
+                    <a href="../blog/blog.html" class="sitemap-link">Blog</a>
+                    <a href="https://mastodon.social/@mactanaka" rel="me" class="sitemap-link">Mastodon</a>
+                    <a href="https://www.linkedin.com/in/marcosatanaka" class="sitemap-link">LinkedIn</a>
+                    <a href="https://github.com/marcosatanaka" class="sitemap-link">GitHub</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+    document.querySelectorAll('.sitemap-heading').forEach(function(heading) {
+        heading.addEventListener('click', function() {
+            if (window.innerWidth > 768) return;
+            var column = this.parentElement;
+            column.classList.toggle('sitemap-open');
+        });
+    });
+    </script>
 
 </body>
 </html>

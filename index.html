@@ -38,7 +38,7 @@
             "https://linkedin.com/in/marcosatanaka",
             "https://github.com/marcosatanaka"
           ],
-          "jobTitle": "iOS Developer",
+          "jobTitle": "Apple Developer",
           "image": "https://marcosatanaka.com/images/me.png"
         },
         {
@@ -108,28 +108,34 @@
 
 <body>
 
-    <section class="section" style="background-color: #383838;">
-        <div class="container">
-            <!-- Top nav bar -->
-            <nav class="level">
-                <!-- Left side -->
-                <div class="level-left">
-                    <h1 class="title">
-                        <div class="has-text-weight-semibold is-inline has-text-white">Marcos Tanaka</div>
-                        <div class="has-text-weight-light title is-4 has-text-white" style="margin-top: 8px;">Apple Developer</div>
-                    </h1>
-                </div>
-
-                <!-- Right side -->
-                <div class="level-right">
-                    <p class="level-item"><strong style="color: #fff !important;">My Apps</strong></p>
-                    <!-- <p class="level-item"><a href="more.html" style="color: #fff !important;">Previous Works</a></p> -->
-                    <p class="level-item"><a href="blog/blog.html" style="color: #fff !important;">Blog</a></p>
-                    <p class="level-item"><a href="about.html" style="color: #fff !important;">About</a></p>
-                </div>
-            </nav>
+    <nav id="global-nav">
+        <div class="gn-content">
+            <a href="#" class="gn-title"><span class="gn-title-name">Marcos Tanaka</span> <span class="gn-title-sep">&bull;</span> <span class="gn-title-role">Apple Developer</span></a>
+            <div class="gn-right">
+                <a href="#musicharbor" class="gn-link">MusicHarbor</a>
+                <a href="#musicsmart" class="gn-link">MusicSmart</a>
+                <a href="#play" class="gn-link">Play</a>
+                <a href="#musicbox" class="gn-link">MusicBox</a>
+                <a href="blog/blog.html" class="gn-link">Blog</a>
+                <a href="about.html" class="gn-link">About</a>
+            </div>
+            <button class="gn-hamburger" aria-label="Menu" onclick="document.getElementById('global-nav').classList.toggle('gn-open')">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <path class="gn-hamburger-top" d="M2 4.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <path class="gn-hamburger-bottom" d="M2 13.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+            </button>
         </div>
-    </section>
+        <div class="gn-dropdown">
+            <a href="#musicharbor" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicHarbor</a>
+            <a href="#musicsmart" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicSmart</a>
+            <a href="#play" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">Play</a>
+            <a href="#musicbox" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicBox</a>
+            <div class="gn-drop-divider"></div>
+            <a href="blog/blog.html" class="gn-drop-link">Blog</a>
+            <a href="about.html" class="gn-drop-link">About</a>
+        </div>
+    </nav>
 
     <!-- MUSICHARBOR -->
 
@@ -873,57 +879,71 @@
         </div>
     </section>
 
-    <!-- CENT -->
-
-    <section class="hero is-warning" style="background-color: #D3CDBA; padding-top: 0px;" id="cent">
-        <div class="hero-body">
-            <div class="columns">
-                <div class="column is-10 is-offset-1">
-                    <figure class="image">
-                        <img alt="Cent screenshot" src="images/apps/cent.png">
-                    </figure>
-                    <section class="section has-text-centered">
-                        <h2 class="title is-3">Cent</h2>
-                        <div class="columns">
-                            <div class="column is-offset-3 is-6">
-                                <p class="has-text-centered">Cent is a simple utility to <strong>calculate percentages</strong> on your Mac.</p>
-                            </div>
-                        </div>
-                        <a href="https://apps.apple.com/us/app/cent-percentage-calculator/id1590545985">
-                            <img alt="Download Cent on App Store" class="download" src="images/mac-app-store-badge.svg">
-                        </a>
-                        <a href="press-kit/cent/cent-press-kit.html">
-                            <img alt="Access Cent’s Press Kit" src="images/press-kit-dark-badge.svg">
-                        </a>
-                    </section>
+    <!-- Footer sitemap -->
+    <footer style="background-color: #f5f5f7; padding: 40px 0 20px;">
+        <div class="sitemap">
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicHarbor</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicharbor/id1440405750" class="sitemap-link">Download</a>
+                    <a href="press-kit/musicharbor/musicharbor-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="terms/music-harbor.html" class="sitemap-link">Terms of Use</a>
+                    <a href="privacy/music-harbor.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicSmart</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/musicsmart/id1512195368" class="sitemap-link">Download</a>
+                    <a href="press-kit/musicsmart/musicsmart-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="terms/music-smart.html" class="sitemap-link">Terms of Use</a>
+                    <a href="privacy/music-smart.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Play</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1596506190" class="sitemap-link">Download</a>
+                    <a href="press-kit/play/play-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="whats-new/play.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="whats-new/play-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="terms/play.html" class="sitemap-link">Terms of Use</a>
+                    <a href="privacy/play.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicBox</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/us/app/id1614730313" class="sitemap-link">Download</a>
+                    <a href="press-kit/musicbox/musicbox-press-kit.html" class="sitemap-link">Press Kit</a>
+                    <a href="whats-new/musicbox-ios.html" class="sitemap-link">What's New (iOS)</a>
+                    <a href="whats-new/musicbox-macos.html" class="sitemap-link">What's New (macOS)</a>
+                    <a href="terms/musicbox.html" class="sitemap-link">Terms of Use</a>
+                    <a href="privacy/musicbox.html" class="sitemap-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Meta</h4>
+                <div class="sitemap-links">
+                    <a href="about.html" class="sitemap-link">About</a>
+                    <a href="blog/blog.html" class="sitemap-link">Blog</a>
+                    <a href="https://mastodon.social/@mactanaka" rel="me" class="sitemap-link">Mastodon</a>
+                    <a href="https://www.linkedin.com/in/marcosatanaka" class="sitemap-link">LinkedIn</a>
+                    <a href="https://github.com/marcosatanaka" class="sitemap-link">GitHub</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <a rel="me" class="button is-medium is-outlined download" aria-label="Go to my Mastodon profile"
-                title="Mastodon" href="https://mastodon.social/@mactanaka">
-                <span class="icon">
-                    <i class="fab fa-mastodon"></i>
-                </span>
-            </a>
-            <a class="button is-medium is-outlined download" aria-label="Go to my LinkedIn profile" title="LinkedIn"
-                href="https://www.linkedin.com/in/marcosatanaka">
-                <span class="icon">
-                    <i class="fab fa-linkedin"></i>
-                </span>
-            </a>
-            <a class="button is-medium is-outlined download" aria-label="Go to my GitHub profile" title="GitHub"
-                href="https://github.com/marcosatanaka">
-                <span class="icon">
-                    <i class="fab fa-github"></i>
-                </span>
-            </a>
-        </div>
     </footer>
+
+    <script>
+    document.querySelectorAll('.sitemap-heading').forEach(function(heading) {
+        heading.addEventListener('click', function() {
+            if (window.innerWidth > 768) return;
+            var column = this.parentElement;
+            column.classList.toggle('sitemap-open');
+        });
+    });
+    </script>
 
 </body>
 
