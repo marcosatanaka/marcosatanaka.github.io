@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <!--
+    ============================================================
+    RSS 2.0 Feed — marcosatanaka.com
+    Generated from blog/blog.html (20 most recent posts, newest first)
+
+    CHANNEL METADATA
+      title        : Human-readable name of the feed
+      link         : URL of the HTML website corresponding to the channel
+      description  : Phrase or sentence describing the channel
+      language     : BCP 47 language tag
+      lastBuildDate: RFC-822 date-time of the last content change
+      atom:link    : Self-referencing link required for Atom compatibility
+    ============================================================
+  -->
+
+  <channel>
+    <title>Marcos Tanaka, Apple Developer</title>
+    <link>https://marcosatanaka.com</link>
+    <description>Marcos Tanaka is a software developer working on apps for Apple&apos;s platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://marcosatanaka.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <!--
+      ============================================================
+      ITEM STRUCTURE (repeated for each post, newest → oldest)
+        title       : Post title, plain text, no HTML
+        link        : Canonical absolute URL of the post
+        guid        : Globally unique identifier — set to the post URL
+                      isPermaLink="true" confirms it is a permalink
+        pubDate     : RFC-822 publication date
+        description : CDATA block containing:
+                        1. Hero image  <img src="…" alt="…" />
+                        2. Short summary  <p>…</p>
+      ============================================================
+    -->
+
+    <!-- MusicHarbor iOS 26 -->
+    <item>
+      <title>What&apos;s New in MusicHarbor for iOS, iPadOS, and macOS 26</title>
+      <link>https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-26.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-26.html</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-26/1.png" alt="What&apos;s New in MusicHarbor for iOS, iPadOS, and macOS 26 hero image" />
+        <p>Say hello to a fresh look reimagined for the new design language, a refined preview experience with miniplayer, and smart news summaries.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicSmart iOS 26 -->
+    <item>
+      <title>What&apos;s New in MusicSmart for iOS, iPadOS, and macOS 26</title>
+      <link>https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-26.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-26.html</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-26/1.png" alt="What&apos;s New in MusicSmart for iOS, iPadOS, and macOS 26 hero image" />
+        <p>Discover a fresh new look tailored for the new design language, a new app icon, and smart credits summaries powered by Apple Intelligence.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play iOS 26 -->
+    <item>
+      <title>What&apos;s New in Play for iOS, iPadOS, and macOS 26</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-ios-26.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-ios-26.html</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-ios-26/1.png" alt="What&apos;s New in Play for iOS, iPadOS, and macOS 26 hero image" />
+        <p>Play now features a modernized UI that adopts the new design language in every view and platform, plus smart features powered by Apple Intelligence including the ability to summarize YouTube videos.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicBox iOS 26 -->
+    <item>
+      <title>What&apos;s New in MusicBox for iOS, iPadOS, and macOS 26</title>
+      <link>https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-26.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-26.html</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-26/1.png" alt="What&apos;s New in MusicBox for iOS, iPadOS, and macOS 26 hero image" />
+        <p>MusicBox gets a fresh redesign adopting the new Liquid Glass design language across every view, updated app icons, and smart tag and icon suggestions powered by Apple Intelligence.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicHarbor 5.0 -->
+    <item>
+      <title>What&apos;s New in MusicHarbor 5.0</title>
+      <link>https://marcosatanaka.com/press-kit/musicharbor/whats-new-5.0.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicharbor/whats-new-5.0.html</guid>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicharbor/whats-new-5.0/7BAE06B3-CC9B-4994-8C12-A604E0E8F9A5.png" alt="What&apos;s New in MusicHarbor 5.0 hero image" />
+        <p>MusicHarbor 5.0 brings new ways to stay connected with your favorite artists with three major features: News, Top Charts, and Time Capsule.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play Premium Renewals -->
+    <item>
+      <title>Play Premium Renewals</title>
+      <link>https://marcosatanaka.com/blog/play-premium-renewals.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/blog/play-premium-renewals.html</guid>
+      <pubDate>Sat, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/blog/app-store.png" alt="Play Premium Renewals hero image" />
+        <p>A look back at Play&apos;s first year since launching Play Premium — over 100 features, improvements, and bug fixes across 54 releases — and what makes renewing worthwhile.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicHarbor iOS 18 -->
+    <item>
+      <title>What&apos;s New in MusicHarbor for iOS 18 and iPadOS 18</title>
+      <link>https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-18.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-18.html</guid>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-18/D4BF04CC1314.png" alt="What&apos;s New in MusicHarbor for iOS 18 and iPadOS 18 hero image" />
+        <p>MusicHarbor 4.9.0 supports iOS 18 and iPadOS 18 with new adaptive app icons, controls for the redesigned Control Center, and new App Shortcuts for Siri and Spotlight.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicSmart iOS 18 -->
+    <item>
+      <title>What&apos;s New in MusicSmart for iOS 18, iPadOS 18, and tvOS 18</title>
+      <link>https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-18.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-18.html</guid>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-18/4D40C01FCA3F.png" alt="What&apos;s New in MusicSmart for iOS 18, iPadOS 18, and tvOS 18 hero image" />
+        <p>MusicSmart 2.1.0 supports iOS 18, iPadOS 18, and tvOS 18 with Control Center controls, adaptive app icons, Spotlight integration, App Shortcuts for Siri, and liner notes translation. The Apple TV app also receives a major redesign.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play iOS 18 -->
+    <item>
+      <title>What&apos;s New in Play for iOS 18 and iPadOS 18</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-ios-18.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-ios-18.html</guid>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-ios-18/83DBC61DE2D6.png" alt="What&apos;s New in Play for iOS 18 and iPadOS 18 hero image" />
+        <p>Play 2.3.0 supports iOS 18 and iPadOS 18 with Control Center controls, adaptive app icons, Spotlight integration, App Shortcuts for Siri, and video description translation.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicBox iOS 18 -->
+    <item>
+      <title>What&apos;s New in MusicBox for iOS 18 and iPadOS 18</title>
+      <link>https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-18.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-18.html</guid>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-18/C92523C41E3D.png" alt="What&apos;s New in MusicBox for iOS 18 and iPadOS 18 hero image" />
+        <p>MusicBox 1.4.0 supports iOS 18 and iPadOS 18 with Control Center controls, adaptive app icons, Spotlight integration, and App Shortcuts for Siri, Spotlight, and the Shortcuts app.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play 2.0 -->
+    <item>
+      <title>What&apos;s New in Play 2.0</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-2.0.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-2.0.html</guid>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-2.0/1.png" alt="What&apos;s New in Play 2.0 hero image" />
+        <p>Play 2.0 introduces the ability to follow YouTube channels and get new videos as they&apos;re released, watch videos in-app, and organize Tags and Smart Searches into folders.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicHarbor iOS 17 -->
+    <item>
+      <title>What&apos;s New in MusicHarbor for iOS 17, iPadOS 17, and macOS Sonoma</title>
+      <link>https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-17.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-17.html</guid>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-17/5.png" alt="What&apos;s New in MusicHarbor for iOS 17, iPadOS 17, and macOS Sonoma hero image" />
+        <p>MusicHarbor 4.6.8 brings interactive widgets, support for StandBy mode on iPhone, Lock Screen widgets on iPad, and a brand-new playback experience for music videos.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicSmart iOS 17 -->
+    <item>
+      <title>What&apos;s New in MusicSmart for iOS 17, iPadOS 17, and macOS Sonoma</title>
+      <link>https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-17.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-17.html</guid>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-17/6.png" alt="What&apos;s New in MusicSmart for iOS 17, iPadOS 17, and macOS Sonoma hero image" />
+        <p>MusicSmart 2.0.2 brings interactive widgets, redesigned credits with artist profile pictures, support for StandBy mode, and Lock Screen widgets for iOS 17, iPadOS 17, and macOS Sonoma.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play iOS 17 -->
+    <item>
+      <title>What&apos;s New in Play for iOS 17, iPadOS 17, and macOS Sonoma</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-ios-17.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-ios-17.html</guid>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-ios-17/1.png" alt="What&apos;s New in Play for iOS 17, iPadOS 17, and macOS Sonoma hero image" />
+        <p>Play 1.4.1 brings interactive widgets, the ability to watch YouTube videos within the app, StandBy mode support, and Lock Screen widgets for iOS 17, iPadOS 17, and macOS Sonoma.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicBox iOS 17 -->
+    <item>
+      <title>What&apos;s New in MusicBox for iOS 17, iPadOS 17, and macOS Sonoma</title>
+      <link>https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-17.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-17.html</guid>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-17/2.png" alt="What&apos;s New in MusicBox for iOS 17, iPadOS 17, and macOS Sonoma hero image" />
+        <p>MusicBox 1.2.3 brings interactive widgets, support for StandBy mode on iPhone, Lock Screen widgets on iPad, and more for iOS 17, iPadOS 17, and macOS Sonoma.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicSmart 2.0 -->
+    <item>
+      <title>What&apos;s New in MusicSmart 2.0</title>
+      <link>https://marcosatanaka.com/press-kit/musicsmart/whats-new-2.0.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicsmart/whats-new-2.0.html</guid>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicsmart/whats-new-2.0/1.png" alt="What&apos;s New in MusicSmart 2.0 hero image" />
+        <p>MusicSmart 2.0 is a major update introducing Smart Sections, Roles and Instruments Insights, Continuous Mode, MusicBrainz support, Trending Songs and Popular Albums, and significant UI improvements across iPhone, iPad, and Mac.</p>
+      ]]></description>
+    </item>
+
+    <!-- Creative Selection -->
+    <item>
+      <title>Creative Selection, por Ken Kocienda</title>
+      <link>https://marcosatanaka.com/blog/creative-selection.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/blog/creative-selection.html</guid>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://miro.medium.com/max/1350/1*wOChrQDBSeDL-nDrHmnE5Q.jpeg" alt="Creative Selection, por Ken Kocienda hero image" />
+        <p>A review of Creative Selection, the book by Ken Kocienda about Apple&apos;s design process during the Steve Jobs era, covering the creation of Safari and the iPhone keyboard.</p>
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>
