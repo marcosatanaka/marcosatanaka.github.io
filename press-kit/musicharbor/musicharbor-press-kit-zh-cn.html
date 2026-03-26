@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>媒体资料包 | MusicHarbor — iOS 音乐发布追踪应用</title>
+    <meta name="Description" content="MusicHarbor 媒体资料包 — 一款帮助您实时掌握喜爱歌手和唱片公司的新歌、MV、音乐资讯与演唱会动态的 iPhone、iPad 及 Mac 应用。">
+    <meta name="keywords" content="MusicHarbor, 音乐新歌追踪, 歌手新专辑提醒, 新歌发布通知, iOS音乐应用, Apple Music应用, 音乐发布记录, 演唱会信息, MV追踪, 音乐爱好者应用, 苹果音乐, 新专辑提醒">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="媒体资料包 | MusicHarbor">
+    <meta property="og:description" content="MusicHarbor — 实时掌握喜爱歌手的新歌、MV 与演唱会动态。适用于 iPhone、iPad 和 Mac。">
+    <meta property="og:locale" content="zh_CN">
+    <link rel="stylesheet" href="../../bulma.min.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../press.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body>
+
+    <nav id="global-nav">
+        <div class="gn-content">
+            <a href="../../index.html" class="gn-title"><span class="gn-title-name">Marcos Tanaka</span> <span class="gn-title-sep">&bull;</span> <span class="gn-title-role">Apple Developer</span></a>
+            <div class="gn-right">
+                <a href="../../index.html#musicharbor" class="gn-link">MusicHarbor</a>
+                <a href="../../index.html#play" class="gn-link">Play</a>
+                <a href="../../index.html#musicsmart" class="gn-link">MusicSmart</a>
+                <a href="../../index.html#musicbox" class="gn-link">MusicBox</a>
+                <a href="../../blog/blog.html" class="gn-link">Blog</a>
+                <a href="../../about.html" class="gn-link">About</a>
+            </div>
+            <button class="gn-hamburger" aria-label="Menu" onclick="document.getElementById('global-nav').classList.toggle('gn-open')">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <path class="gn-hamburger-top" d="M2 4.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <path class="gn-hamburger-bottom" d="M2 13.5h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="gn-dropdown">
+            <a href="../../index.html#musicharbor" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicHarbor</a>
+            <a href="../../index.html#play" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">Play</a>
+            <a href="../../index.html#musicsmart" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicSmart</a>
+            <a href="../../index.html#musicbox" class="gn-drop-link" onclick="document.getElementById('global-nav').classList.remove('gn-open')">MusicBox</a>
+            <div class="gn-drop-divider"></div>
+            <a href="../../blog/blog.html" class="gn-drop-link">Blog</a>
+            <a href="../../about.html" class="gn-drop-link">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding-top: 0px;">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-12">
+                    <section class="section">
+                        <p class="title is-2 has-text-centered" style="padding-bottom: 0.7em;">MusicHarbor 媒体资料包</p>
+                        <div class="columns">
+                            <div class="column is-2 press-index-sticky">
+                                <a href="https://apps.apple.com/cn/app/id1440405750">
+                                    <div class="card-image has-text-centered">
+                                            <figure class="image is-128x128 is-inline-block zoom">
+                                                <img alt="在 App Store 下载 MusicHarbor" src="icon_512x512_os26.png">
+                                            </figure>
+                                        </div>
+                                </a>
+
+                                <div class="content">
+                                    <ol>
+                                        <li><a class="underlined" href="#about">关于 MusicHarbor</a></li>
+                                        <li><a class="underlined" href="#features">核心功能</a></li>
+                                        <li><a class="underlined" href="#links">相关链接</a></li>
+                                        <li><a class="underlined" href="#media">应用截图</a></li>
+                                        <ol>
+                                            <li><a class="underlined" href="#iphone">iPhone</a></li>
+                                            <li><a class="underlined" href="#ipad">iPad</a></li>
+                                            <li><a class="underlined" href="#mac">Mac</a></li>
+                                        </ol>
+                                        <li><a class="underlined" href="#price">价格与适用范围</a></li>
+                                        <li><a class="underlined" href="#releasedate">发布日期</a></li>
+                                        <li><a class="underlined" href="#aboutdevelopment">开发历程</a></li>
+                                        <li><a class="underlined" href="#creator">认识开发者</a></li>
+                                        <li><a class="underlined" href="#questions">联系我们</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        	<div class="column is-6 is-offset-1 press-content-column">
+                                <p class="title is-4" id="about">关于 MusicHarbor</p>
+
+                                <div class="content">
+
+			                    <p><strong>MusicHarbor 是一款屡获殊荣的应用，帮助您实时掌握所有喜爱歌手和唱片公司的新歌发布、MV、音乐资讯与演唱会动态。</strong></p>
+
+                                <p>MusicHarbor 将您关注歌手的最新内容按时间顺序汇总整理，确保您不会错过任何更新、一览无遗。您可以通过导入 Apple Music、Spotify 和 Last.fm 账户快速上手，也可以手动添加歌手。</p>
+                                </div>
+
+                                <section class="section has-text-centered" style="padding: 2rem; !important">
+                                    <a href="https://apps.apple.com/cn/app/id1440405750">
+                                        <img alt="在 App Store 下载 MusicHarbor" src="../../images/app-store-white-badge.svg">
+                                    </a>
+                                </section>
+
+                                <div class="notification has-text-centered">
+                                    <a href="whats-new-ios-26.html">了解 MusicHarbor 在 iOS、iPadOS 和 macOS 26 中的全部新特性。</a>
+                                </div>
+
+                                <p class="title is-4" id="features">核心功能</p>
+
+                                <div class="content">
+                                    <ul>
+                                        <li><strong>全面追踪：</strong>新发布与即将发布的专辑、单曲、MV、访谈与现场演出、音乐资讯、演唱会等。可预听曲目与 MV，将即将发布的单曲加入播放列表，为即将上线的专辑创建日历提醒等。</li>
+                                        <li><strong>导入歌手：</strong>支持 Apple Music、Spotify、Last.fm 以及本地音乐库。</li>
+                                        <li><strong>连接流媒体平台：</strong>将歌曲添加至您的 Apple Music 或 Spotify 收藏与播放列表。可在 Music 应用、Spotify、YouTube Music、Tidal、Deezer 等数十个平台中打开专辑。</li>
+                                        <li><strong>按发行类型筛选：</strong>自由选择您希望追踪的内容类型：完整专辑、单曲、EP、混音版、现场演出版及原声版。</li>
+                                        <li><strong>发现新歌手：</strong>浏览热门排行榜，发现当下最受关注的歌手，拓展您的音乐收藏。</li>
+                                        <li><strong>互动小组件：</strong>直接在主屏幕、锁定屏幕、控制中心和桌面上查看并操作 MusicHarbor 内容。</li>
+                                        <li><strong>收藏功能：</strong>通过内置收藏功能将专辑和视频保存，方便日后欣赏。</li>
+                                        <li><strong>快捷指令支持：</strong>通过「快捷指令」应用中的自定义动作管理 MusicHarbor，支持条件筛选查找专辑、歌手和 MV，以及更改应用设置等操作。</li>
+                                        <li><strong>统计图表：</strong>查看您关注歌手的音乐发布记录与统计分析图表。</li>
+                                        <li><strong>iCloud 同步：</strong>您的歌手、唱片公司与发布内容将通过 iCloud 账户自动同步至所有 iOS、iPadOS 及 macOS 设备。</li>
+                                        <li><strong>iPhone、iPad 与 Mac 全平台支持：</strong>MusicHarbor 在 App Store 和 Mac App Store 均有上架，并针对各平台进行了专属优化。</li>
+                                        <li><strong>持续迭代更新：</strong>MusicHarbor 持续支持最新 iOS、iPadOS 及 macOS 特性，包括主屏幕、锁定屏幕与控制中心互动小组件、快捷指令、Shazam、Swift Charts、触控板与键盘支持、上下文菜单、Spotlight 搜索、iCloud 同步、动态字体等。</li>
+                                        <li><strong>注重隐私：</strong>无需注册账户即可使用，所有数据均在本地设备上处理，不上传至第三方服务器。</li>
+                                    </ul>
+                                </div>
+
+                                <p class="title is-4" id="links">相关链接</p>
+
+                                <div class="content">
+                                    <p><strong>App Store：</strong> <a class="underlined" href="https://apps.apple.com/cn/app/id1440405750" style="font-family:'Lucida Console', monospace">apps.apple.com/cn/app/id1440405750</a></p>
+                                </div>
+
+                                <p class="title is-4" id="media">应用截图</p>
+
+                                <div class="content">
+                                    <p>您可以<a download href="media-zh-cn.zip" class="underlined">点击此处</a>一次性下载全部图片，或右键单击下方任意截图保存单张原始分辨率图片：</p>
+                                </div>
+
+                                <p class="title is-5" id="iphone">iPhone</p>
+
+                                <div class="columns is-multiline">
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-1.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-2.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-3.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-4.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-5.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-6.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-7.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-8.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-9.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half-desktop is-half-tablet">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-621by1344">
+                                                    <img src="iPhone-zh-cn/iphone-10.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="title is-5" id="ipad">iPad</p>
+
+                                <div class="columns is-multiline">
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-1.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-2.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-3.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-4.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-5.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-6.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-7.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-8.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-9.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-1668by2388">
+                                                    <img src="iPad-zh-cn/ipad-10.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="title is-5" id="mac">Mac</p>
+
+                                <div class="columns is-multiline">
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-1.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-2.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-3.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-4.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-5.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-6.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-7.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-8.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-9.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-10.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-11.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-full">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <figure class="image is-2388by1668">
+                                                    <img src="Mac/mac-12.png" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="title is-4" id="price">价格与适用范围</p>
+
+                                <div class="content">
+                                    <p>MusicHarbor 可免费下载使用，适用于 iPhone、iPad 和 Mac。您也可以选择升级至 MusicHarbor 高级版（Premium），这是一项可选订阅服务，可解锁更多进阶功能。</p>
+                                    <p>下表列出了基础版与高级版的功能对比：</p>
+                                </div>
+
+                                <table class="table is-striped is-hoverable">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th style="text-align: center">MusicHarbor 基础版</th>
+                                            <th style="text-align: center">MusicHarbor 高级版</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>价格</th>
+                                            <td style="text-align: center">免费</td>
+                                            <td style="text-align: center">¥5.80/月 <em>或</em><br>¥29.80/年 <em>或</em><br>¥398.00（一次性购买）</td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <th>无限关注歌手</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>导入歌手</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>最新发布</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>即将发布</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MV</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>音乐资讯</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>热门排行榜</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>时光胶囊</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>按发行类型筛选</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>关注唱片公司</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>自定义布局与外观</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>自定义应用图标</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spotify、YouTube 等平台</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>即将发布单曲播放列表</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>每月发布播放列表</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>收藏稍后查看</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>日历与统计图表</th>
+                                            <td style="text-align: center"></td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>小组件</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>快捷指令</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                        <tr>
+                                            <th>iCloud 同步</th>
+                                            <td style="text-align: center">&#10004</td>
+                                            <td style="text-align: center">&#10004</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="content">
+                                    <p>MusicHarbor 需要 iOS/iPadOS 17 及 macOS Sonoma 或更高版本。</p>
+                                </div>
+
+                                <p class="title is-4" id="releasedate">发布日期</p>
+
+                                <div class="content">
+                                    <p>2018 年 11 月 21 日。</p>
+                                </div>
+
+                                <p class="title is-4" id="aboutdevelopment">开发历程</p>
+
+                                <div class="content">
+                                    <p>MusicHarbor 最初是一款用于追踪 Apple Music 新音乐发布的 iPhone 应用。自 1.0 版本上线以来，它不断丰富功能，如今已成为一款面向音乐爱好者的完整解决方案，帮助用户实时掌握喜爱歌手和唱片公司的最新专辑、单曲、MV、音乐资讯与演唱会动态。</p>
+                                </div>
+
+                                <p class="title is-4" id="creator">认识开发者</p>
+
+                                <div class="about-content content">
+                                    <img class="about-profile-image" alt="Marcos Tanaka" src="../../images/me.png">
+                                    <p>Marcos Tanaka 是一位专注于 Apple 平台的独立应用开发者，也是 Loop Apps 的创始人。他致力于打造直觉友好、实用且令用户愉悦的产品。</p>
+                                    <p>他成长于巴西马林加，先后攻读计算机科学及系统分析与开发专业，并逐渐专注于使用 Swift、UIKit 和 SwiftUI 等技术进行 Apple 平台应用开发。</p>
+                                    <p>目前，他通过 Loop Apps 专注开发多款应用，包括 MusicHarbor、MusicSmart、Play 和 MusicBox。工作之余，他享受园艺、烹饪、精品咖啡、跑步、听音乐和阅读的乐趣。他相信，经过深思熟虑设计的技术能够改善日常生活，让更多人享受到强大工具带来的便利。</p>
+                                </div>
+
+                                <p class="title is-4" id="questions">联系我们</p>
+
+                                <div class="content">
+                                    <p>如有任何问题，欢迎随时<a href="mailto:marcosatanaka@gmail.com" class="underlined">通过邮件联系我们</a>。</p>
+                                </div>
+
+		                	</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sitemap -->
+    <footer style="background-color: #f5f5f7; padding: 40px 0 20px;">
+        <div class="sitemap">
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicHarbor</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/cn/app/id1440405750" class="sitemap-link">下载</a>
+                    <a href="../../press-kit/musicharbor/musicharbor-press-kit.html" class="sitemap-link">媒体资料包</a>
+                    <a href="../../terms/music-harbor.html" class="sitemap-link">使用条款</a>
+                    <a href="../../privacy/music-harbor.html" class="sitemap-link">隐私政策</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicSmart</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/cn/app/musicsmart/id1512195368" class="sitemap-link">下载</a>
+                    <a href="../../press-kit/musicsmart/musicsmart-press-kit.html" class="sitemap-link">媒体资料包</a>
+                    <a href="../../terms/music-smart.html" class="sitemap-link">使用条款</a>
+                    <a href="../../privacy/music-smart.html" class="sitemap-link">隐私政策</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">Play</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/cn/app/id1596506190" class="sitemap-link">下载</a>
+                    <a href="../../press-kit/play/play-press-kit.html" class="sitemap-link">媒体资料包</a>
+                    <a href="../../whats-new/play.html" class="sitemap-link">最新更新 (iOS)</a>
+                    <a href="../../whats-new/play-macos.html" class="sitemap-link">最新更新 (macOS)</a>
+                    <a href="../../terms/play.html" class="sitemap-link">使用条款</a>
+                    <a href="../../privacy/play.html" class="sitemap-link">隐私政策</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">MusicBox</h4>
+                <div class="sitemap-links">
+                    <a href="https://apps.apple.com/cn/app/id1614730313" class="sitemap-link">下载</a>
+                    <a href="../../press-kit/musicbox/musicbox-press-kit.html" class="sitemap-link">媒体资料包</a>
+                    <a href="../../whats-new/musicbox-ios.html" class="sitemap-link">最新更新 (iOS)</a>
+                    <a href="../../whats-new/musicbox-macos.html" class="sitemap-link">最新更新 (macOS)</a>
+                    <a href="../../terms/musicbox.html" class="sitemap-link">使用条款</a>
+                    <a href="../../privacy/musicbox.html" class="sitemap-link">隐私政策</a>
+                </div>
+            </div>
+            <div class="sitemap-column">
+                <h4 class="sitemap-heading">其他</h4>
+                <div class="sitemap-links">
+                    <a href="../../about.html" class="sitemap-link">关于</a>
+                    <a href="../../blog/blog.html" class="sitemap-link">博客</a>
+                    <a href="https://mastodon.social/@mactanaka" rel="me" class="sitemap-link">Mastodon</a>
+                    <a href="https://www.linkedin.com/in/marcosatanaka" class="sitemap-link">LinkedIn</a>
+                    <a href="https://github.com/marcosatanaka" class="sitemap-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.querySelectorAll('.sitemap-heading').forEach(function(heading) {
+        heading.addEventListener('click', function() {
+            if (window.innerWidth > 768) return;
+            var column = this.parentElement;
+            column.classList.toggle('sitemap-open');
+        });
+    });
+    </script>
+
+</body>
+</html>
