@@ -4,7 +4,7 @@
   <!--
     ============================================================
     RSS 2.0 Feed — marcosatanaka.com
-    Generated from blog/blog.html (20 most recent posts, newest first)
+    Generated from blog/blog.html (newest first)
 
     CHANNEL METADATA
       title        : Human-readable name of the feed
@@ -21,7 +21,7 @@
     <link>https://marcosatanaka.com</link>
     <description>Marcos Tanaka is a software developer working on apps for Apple&apos;s platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 03:14:16 +0000</lastBuildDate>
     <atom:link href="https://marcosatanaka.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <!--
@@ -37,6 +37,54 @@
                         2. Short summary  <p>…</p>
       ============================================================
     -->
+
+    <!-- MusicHarbor iOS 27 -->
+    <item>
+      <title>What&apos;s New in MusicHarbor for iOS, iPadOS, and macOS 27</title>
+      <link>https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-27.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-27.html</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicharbor/whats-new-ios-27/6.jpg" alt="What&#x27;s New in MusicHarbor for iOS, iPadOS, and macOS 27 hero image" />
+        <p>This release makes keeping up with music more effortless, with news summaries in the user’s native language, richer Home Screen widgets, and new ways to discover artists through physical albums. Beautifully redesigned Liquid Glass pages and adaptable windows make exploring music feel at home on every screen.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicSmart iOS 27 -->
+    <item>
+      <title>What&apos;s New in MusicSmart for iOS, iPadOS, and macOS 27</title>
+      <link>https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-27.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-27.html</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicsmart/whats-new-ios-27/2-poster.jpg" alt="What&#x27;s New in MusicSmart for iOS, iPadOS, and macOS 27 hero image" />
+        <p>This release makes discovering the people behind the music easier than ever. Approachable AI explanations bring detailed credits to life, while Siri, Visual Intelligence, and expanded Live Liner Notes widgets offer new ways to explore a song or album wherever curiosity strikes.</p>
+      ]]></description>
+    </item>
+
+    <!-- Play iOS 27 -->
+    <item>
+      <title>What&apos;s New in Play for iOS, iPadOS, and macOS 27</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-ios-27.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-ios-27.html</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-ios-27/1-poster.jpg" alt="What&#x27;s New in Play for iOS, iPadOS, and macOS 27 hero image" />
+        <p>This release helps users get more from the videos they save, with flexible AI summaries, questions about video contents, and smarter organization. Natural-language Smart Searches make powerful filtering more approachable, while larger widgets bring more saved videos and channel activity to the Home Screen.</p>
+      ]]></description>
+    </item>
+
+    <!-- MusicBox iOS 27 -->
+    <item>
+      <title>What&apos;s New in MusicBox for iOS, iPadOS, and macOS 27</title>
+      <link>https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-27.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-27.html</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/musicbox/whats-new-ios-27/1-poster.jpg" alt="What&#x27;s New in MusicBox for iOS, iPadOS, and macOS 27 hero image" />
+        <p>This release brings new ways to collect, organize, and rediscover music. Users can create Smart Searches by describing what they want, browse up to 20 albums or songs in customizable Home Screen widgets, and scan physical albums to add them to their library.</p>
+      ]]></description>
+    </item>
 
     <!-- MusicHarbor iOS 26 -->
     <item>
