@@ -21,7 +21,7 @@
     <link>https://marcosatanaka.com</link>
     <description>Marcos Tanaka is a software developer working on apps for Apple&apos;s platforms since 2018. He developed MusicHarbor, MusicSmart, Play, MusicBox, and other apps.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Sep 2026 03:14:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 17:57:26 +0000</lastBuildDate>
     <atom:link href="https://marcosatanaka.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <!--
@@ -37,6 +37,18 @@
                         2. Short summary  <p>…</p>
       ============================================================
     -->
+
+    <!-- Play 3.0 -->
+    <item>
+      <title>What&apos;s New in Play 3.0</title>
+      <link>https://marcosatanaka.com/press-kit/play/whats-new-3.0.html</link>
+      <guid isPermaLink="true">https://marcosatanaka.com/press-kit/play/whats-new-3.0.html</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <img src="https://marcosatanaka.com/press-kit/play/whats-new-3.0/hero.png" alt="Play app icon above 3.0 on a red and orange background" />
+        <p>Play 3.0 brings a fresh new look, featuring a gorgeous new app icon designed by Iconfactory, a redesigned tab bar navigation, and beautiful video details inspired by Liquid Glass. Discover videos, channels, movies, and TV shows with the new unified Search tab, and enjoy a more streamlined Subscriptions experience. Plus, improved widgets, new customization options, and plenty of refinements and bug fixes across the app.</p>
+      ]]></description>
+    </item>
 
     <!-- MusicHarbor iOS 27 -->
     <item>
